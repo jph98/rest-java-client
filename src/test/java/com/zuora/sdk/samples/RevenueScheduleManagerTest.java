@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import com.zuora.sdk.lib.ZClient;
+import com.zuora.sdk.http.ZClient;
 
 public class RevenueScheduleManagerTest {
    static final String SAMPLE_TRANSACTION_REVENUE_SCHEDULE_KEY = "RS-00000001";

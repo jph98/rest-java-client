@@ -2,7 +2,7 @@ package com.zuora.sdk.samples;
 
 import org.junit.Test;
 
-import com.zuora.sdk.lib.ZClient;
+import com.zuora.sdk.http.ZClient;
 
 public class RevenueItemManagerTest {
    static final String SAMPLE_CHARGE_REVENUE_SUMMARY_KEY = "CRS-00000001";

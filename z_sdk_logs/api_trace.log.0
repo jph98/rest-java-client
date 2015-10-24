@@ -1,0 +1,916 @@
+2015-10-23 03:31:49.395 1 ***** SDK loggers initialized *****
+2015-10-23 03:31:49.418 1 ***** PRE-API TRACE *****
+2015-10-23 03:31:49.418 1 HTTP method = POST
+2015-10-23 03:31:49.418 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-23 03:31:49.418 1 Request Body = {}
+2015-10-23 03:31:49.418 1 Header = Accept: application/json
+2015-10-23 03:31:49.418 1 Header = Content-Type: application/json
+2015-10-23 03:31:49.418 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-23 03:31:49.418 1 Header = apiSecretAccessKey: Herbert01
+2015-10-23 03:31:51.070 1 ***** POST-API RESPONSE TRACE *****
+2015-10-23 03:31:51.070 1 HTTP method = POST
+2015-10-23 03:31:51.070 1 null
+2015-10-23 03:31:51.071 1 org.apache.http.impl.client.InternalHttpClient.getParams(InternalHttpClient.java:210)
+com.zuora.sdk.http.ZAPI.tracePostAPIResponse(ZAPI.java:321)
+com.zuora.sdk.http.ZAPI.execPostAPI(ZAPI.java:213)
+com.zuora.sdk.http.ZAPI.execPostAPI(ZAPI.java:153)
+com.zuora.sdk.http.ZClient.post(ZClient.java:148)
+com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:32)
+com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:50)
+com.zuora.sdk.samples.AccountManagerTest.test_account_manager(AccountManagerTest.java:22)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:606)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:78)
+com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:212)
+com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:68)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:606)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+2015-10-23 03:31:51.071 1 Fatal Error in executing HTTP POST https://apisandbox-api.zuora.com/rest/connections
+2015-10-23 03:31:51.071 1 com.zuora.sdk.http.ZAPI.execPostAPI(ZAPI.java:220)
+com.zuora.sdk.http.ZAPI.execPostAPI(ZAPI.java:153)
+com.zuora.sdk.http.ZClient.post(ZClient.java:148)
+com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:32)
+com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:50)
+com.zuora.sdk.samples.AccountManagerTest.test_account_manager(AccountManagerTest.java:22)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:606)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:78)
+com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:212)
+com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:68)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:606)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+2015-10-23 03:31:51.072 1 com.zuora.sdk.http.ZClient.post(ZClient.java:153)
+com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:32)
+com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:50)
+com.zuora.sdk.samples.AccountManagerTest.test_account_manager(AccountManagerTest.java:22)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:606)
+org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+org.junit.runner.JUnitCore.run(JUnitCore.java:160)
+com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:78)
+com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:212)
+com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:68)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.lang.reflect.Method.invoke(Method.java:606)
+com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
+
+2015-10-24 10:09:40.126 1 ***** SDK loggers initialized *****
+2015-10-24 10:09:40.147 1 ***** PRE-API TRACE *****
+2015-10-24 10:09:40.147 1 HTTP method = POST
+2015-10-24 10:09:40.147 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-24 10:09:40.147 1 Request Body = {}
+2015-10-24 10:09:40.147 1 Header = Accept: application/json
+2015-10-24 10:09:40.147 1 Header = Content-Type: application/json
+2015-10-24 10:09:40.147 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-24 10:09:40.147 1 Header = apiSecretAccessKey: Herbert01
+2015-10-24 10:09:40.321 1 HTTPClient Settings: org.apache.http.impl.client.HttpClientBuilder@5673484d
+2015-10-24 10:09:41.527 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:09:41.527 1 HTTP method = POST
+2015-10-24 10:09:41.528 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-24 10:09:41.528 1 Header = Server: Zuora App
+2015-10-24 10:09:41.528 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:09:41.528 1 Header = Content-Length: 22
+2015-10-24 10:09:41.528 1 Header = Expires: Sat, 24 Oct 2015 09:09:41 GMT
+2015-10-24 10:09:41.528 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:09:41.528 1 Header = Pragma: no-cache
+2015-10-24 10:09:41.528 1 Header = Date: Sat, 24 Oct 2015 09:09:41 GMT
+2015-10-24 10:09:41.528 1 Header = Connection: keep-alive
+2015-10-24 10:09:41.528 1 Header = Set-Cookie: ZSession=THiCsYIPOjPTnTDTlEAzaGFmGUvufiljmTnsD00jGiN6LH-h1I1xIoahIEHWtgdcpYrkge1fEaHnN-22zNRRuyEXynqPG0qxU4tjxu9UTtF7fXSC9BjmLm3EbEbBHWktLBvpuv5mK1IXwKDzdZcpWK0qvUJee0MrKKcl0oUAedhNnvv0emELDZWlhIWi9BRGamJiB1A3ClcfpkDeoJdjHngvOIWSPjba8Ih8QwKqSpndUzw2h-cVOrD9YN_KqpzT; Path=/; Secure; HttpOnly
+2015-10-24 10:09:41.528 1 HTTP status = 200
+2015-10-24 10:09:41.528 1 HTTP reason = OK
+2015-10-24 10:09:41.528 1 HTTP version = HTTP/1.1
+2015-10-24 10:09:41.528 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-24 10:09:41.530 1 ***** PRE-API TRACE *****
+2015-10-24 10:09:41.530 1 HTTP method = GET
+2015-10-24 10:09:41.530 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069/summary
+2015-10-24 10:09:41.530 1 Query String = {}
+2015-10-24 10:09:41.530 1 Header = Accept: application/json
+2015-10-24 10:09:41.530 1 Header = follow_redirect: true
+2015-10-24 10:09:41.930 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:09:41.930 1 HTTP method = GET
+2015-10-24 10:09:41.930 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069/summary
+2015-10-24 10:09:41.930 1 Header = Server: Zuora App
+2015-10-24 10:09:41.930 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:09:41.930 1 Header = Content-Length: 1388
+2015-10-24 10:09:41.930 1 Header = Expires: Sat, 24 Oct 2015 09:09:42 GMT
+2015-10-24 10:09:41.930 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:09:41.930 1 Header = Pragma: no-cache
+2015-10-24 10:09:41.930 1 Header = Date: Sat, 24 Oct 2015 09:09:42 GMT
+2015-10-24 10:09:41.930 1 Header = Connection: keep-alive
+2015-10-24 10:09:41.930 1 Header = Set-Cookie: ZSession=atVR_Hpsd4syKl8ttUQzcqHuvuILCN7VFcHdVHAws5m9LQGFMy2gN6eggZjLc1i95x4KWBhJY-W4wZrNTeK6lyJfbZQQTiu_w8TPSq78tE4Fl2btGl0xFPEepHYpSpU1kqbF6zWR6Bt6MnVnN4go4K21scKXzYihwDQb2PM5EIa3bFsVKgjzdWpEl2F8J2b7YzqKar4bVYk8NYBa5yzpx1WguPqkqsp7V4gaGOdpaDxQicmhfvCJn2MH3dLmcs50; Path=/; Secure; HttpOnly
+2015-10-24 10:09:41.930 1 HTTP status = 200
+2015-10-24 10:09:41.931 1 HTTP reason = OK
+2015-10-24 10:09:41.931 1 HTTP version = HTTP/1.1
+2015-10-24 10:09:41.931 1 API Response = {
+  "basicInfo": {
+    "NoDunning__c": null,
+    "accountNumber": "A00001069",
+    "balance": 0,
+    "batch": "Batch1",
+    "billCycleDay": 5,
+    "currency": "GBP",
+    "defaultPaymentMethod": null,
+    "id": "2c92c0f93c1deb6e013c296466fd3b25",
+    "lastInvoiceDate": null,
+    "lastPaymentAmount": null,
+    "lastPaymentDate": null,
+    "name": "Mawi Ltd",
+    "status": "Active"
+  },
+  "billToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "id": "2c92c0f83c1de760013c29646f3305e1",
+    "lastName": "O'Flaherty",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "invoices": [],
+  "payments": [],
+  "soldToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "id": "2c92c0f83c1de760013c29646f3305e1",
+    "lastName": "O'Flaherty",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "subscriptions": [],
+  "success": true,
+  "usage": []
+}
+2015-10-24 10:09:41.935 1 ***** PRE-API TRACE *****
+2015-10-24 10:09:41.935 1 HTTP method = GET
+2015-10-24 10:09:41.935 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069
+2015-10-24 10:09:41.935 1 Query String = {}
+2015-10-24 10:09:41.935 1 Header = Accept: application/json
+2015-10-24 10:09:41.935 1 Header = follow_redirect: true
+2015-10-24 10:09:42.335 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:09:42.335 1 HTTP method = GET
+2015-10-24 10:09:42.335 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069
+2015-10-24 10:09:42.335 1 Header = Server: Zuora App
+2015-10-24 10:09:42.335 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:09:42.335 1 Header = Content-Length: 1744
+2015-10-24 10:09:42.336 1 Header = Expires: Sat, 24 Oct 2015 09:09:42 GMT
+2015-10-24 10:09:42.336 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:09:42.336 1 Header = Pragma: no-cache
+2015-10-24 10:09:42.336 1 Header = Date: Sat, 24 Oct 2015 09:09:42 GMT
+2015-10-24 10:09:42.336 1 Header = Connection: keep-alive
+2015-10-24 10:09:42.336 1 Header = Set-Cookie: ZSession=HnTIWtjxeTQALVMmZNTVra56riGT-9vT-13NjZhrbe-sp0agn2tf4PQWG9VO7681obyT7VsuW7bHeyxUuoNEyboad0aVCn5ggQ_fm9RPA2-2m21ZmwwVECK9S8WdjGTx3GJ2QU1MNiaWIM1eDYK_uNw4_-f_bYxMWJbZn42VsYVvqgI9zHLibKeWaNFwKNg4T6CEfR6cld9rsCBgRdzSzrZheY6kJX4KRetP7u_YeO06bVgblIvEw2qUZatmqJZF; Path=/; Secure; HttpOnly
+2015-10-24 10:09:42.336 1 HTTP status = 200
+2015-10-24 10:09:42.336 1 HTTP reason = OK
+2015-10-24 10:09:42.336 1 HTTP version = HTTP/1.1
+2015-10-24 10:09:42.336 1 API Response = {
+  "basicInfo": {
+    "NoDunning__c": null,
+    "accountNumber": "A00001069",
+    "batch": "Batch1",
+    "communicationProfileId": null,
+    "crmId": "001D000000rkZecIAE",
+    "id": "2c92c0f93c1deb6e013c296466fd3b25",
+    "invoiceTemplateId": "2c92c0f83b8dbf05013b8f8e374a2c96",
+    "name": "Mawi Ltd",
+    "notes": "Mawiltd",
+    "status": "Active"
+  },
+  "billToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "homePhone": "",
+    "lastName": "O'Flaherty",
+    "mobilePhone": "",
+    "nickname": "",
+    "otherPhone": "",
+    "otherPhoneType": null,
+    "personalEmail": "",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "billingAndPayment": {
+    "billCycleDay": 5,
+    "currency": "GBP",
+    "paymentGateway": null,
+    "paymentTerm": "Due Upon Receipt"
+  },
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "metrics": {
+    "balance": 0,
+    "contractedMrr": 0,
+    "creditBalance": 0,
+    "totalInvoiceBalance": 0
+  },
+  "soldToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "homePhone": "",
+    "lastName": "O'Flaherty",
+    "mobilePhone": "",
+    "nickname": "",
+    "otherPhone": "",
+    "otherPhoneType": null,
+    "personalEmail": "",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "success": true
+}
+2015-10-24 10:09:42.343 1 ***** PRE-API TRACE *****
+2015-10-24 10:09:42.343 1 HTTP method = POST
+2015-10-24 10:09:42.343 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts
+2015-10-24 10:09:42.343 1 Request Body = {
+  "ac_Willie__c": "ac_boy",
+  "ac_Winnie__c": "ac_Winnie",
+  "autoPay": true,
+  "billCycleDay": "15",
+  "billToContact": {
+  "address1": "address1",
+  "address2": "address2",
+  "city": "San Francisco",
+  "country": "USA",
+  "firstName": "John",
+  "lastName": "Doe",
+  "mobilePhone": "14156789012",
+  "state": "California",
+  "workEmail": "john.doe@zoura.com"
+},
+  "creditCard": {
+  "cardNumber": "4856200223544175",
+  "cardType": "Visa",
+  "expirationMonth": 2,
+  "expirationYear": 2014,
+  "securityCode": "111"
+},
+  "currency": "USD",
+  "name": "Soho",
+  "notes": "Soho Networks",
+  "paymentTerm": "Net 30",
+  "soldToContact": {
+  "address1": "address1",
+  "address2": "address2",
+  "city": "San Francisco",
+  "country": "USA",
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "mobilePhone": "14156789012",
+  "state": "California",
+  "workEmail": "jane.doe@zoura.com"
+}
+}
+2015-10-24 10:09:42.343 1 Header = Accept: application/json
+2015-10-24 10:09:42.343 1 Header = Content-Type: application/json
+2015-10-24 10:09:42.844 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:09:42.845 1 HTTP method = POST
+2015-10-24 10:09:42.845 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts
+2015-10-24 10:09:42.845 1 Header = Server: Zuora App
+2015-10-24 10:09:42.845 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:09:42.845 1 Header = Content-Length: 177
+2015-10-24 10:09:42.845 1 Header = Expires: Sat, 24 Oct 2015 09:09:42 GMT
+2015-10-24 10:09:42.845 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:09:42.845 1 Header = Pragma: no-cache
+2015-10-24 10:09:42.845 1 Header = Date: Sat, 24 Oct 2015 09:09:42 GMT
+2015-10-24 10:09:42.845 1 Header = Connection: keep-alive
+2015-10-24 10:09:42.845 1 Header = Set-Cookie: ZSession=kKQVBVYvEVHyazVcSR5izvDfA0W8CxB3mqz7blb-o-0ywnF4Nu40aSqClQ1cC-eGTZmSPvGmo06YtT2_O9zdvjCrN_eCkVI8pbu-v9A1nnUymfDk6ihlINlaldGhE7O5dctst58DAWSsjPtdwcXKyfRB5amvoSQma0VXF4H21fP6uUR1tOITD54vhAL-734vZw1pJzQIsY8YQs0oC8yPWQ1lGKOQUYkgI35N7XKa1CxIRJmh8mMa47EQJGbsJkjW; Path=/; Secure; HttpOnly
+2015-10-24 10:09:42.845 1 HTTP status = 200
+2015-10-24 10:09:42.845 1 HTTP reason = OK
+2015-10-24 10:09:42.845 1 HTTP version = HTTP/1.1
+2015-10-24 10:09:42.846 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "processId": "F08F4AE9F1E6F5D3",
+  "reasons": [{
+    "code": 51001020,
+    "message": "Invalid custom fields: 'ac_Willie__c,ac_Winnie__c'."
+  }],
+  "success": false
+}
+2015-10-24 10:14:15.465 1 ***** SDK loggers initialized *****
+2015-10-24 10:14:15.491 1 ***** PRE-API TRACE *****
+2015-10-24 10:14:15.491 1 HTTP method = POST
+2015-10-24 10:14:15.491 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-24 10:14:15.491 1 Request Body = {}
+2015-10-24 10:14:15.491 1 Header = Accept: application/json
+2015-10-24 10:14:15.491 1 Header = Content-Type: application/json
+2015-10-24 10:14:15.491 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-24 10:14:15.491 1 Header = apiSecretAccessKey: Herbert01
+2015-10-24 10:14:15.683 1 HTTPClient Settings: org.apache.http.impl.client.HttpClientBuilder@197d96f9
+2015-10-24 10:14:16.718 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:14:16.718 1 HTTP method = POST
+2015-10-24 10:14:16.719 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-24 10:14:16.719 1 Header = Server: Zuora App
+2015-10-24 10:14:16.719 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:14:16.719 1 Header = Content-Length: 22
+2015-10-24 10:14:16.719 1 Header = Expires: Sat, 24 Oct 2015 09:14:16 GMT
+2015-10-24 10:14:16.719 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:14:16.719 1 Header = Pragma: no-cache
+2015-10-24 10:14:16.719 1 Header = Date: Sat, 24 Oct 2015 09:14:16 GMT
+2015-10-24 10:14:16.719 1 Header = Connection: keep-alive
+2015-10-24 10:14:16.719 1 Header = Set-Cookie: ZSession=JDu1q7N7ar1jgSAJzy1xqEwtf9P2vGJ_u9wPPuNwJo8PIHCbgw-nC6L0h1eSKLJ3J6QxX9nJQlZudVQMI04ZQvCUagT4B4gFkVtd1CRNb93ie--u2R_gNeHWkpeVxNku-GPoVxYSvFkW4VNFPIzfhg5kx5fkcah2jsEtNMe-5KqFuLPcC4cij5Jq444HsZmKacSwlUM4dc3vCToGHZ-Ytk205zgdBrnv1toUUPAmmN2KGmpB59QApR7TITUwfYql; Path=/; Secure; HttpOnly
+2015-10-24 10:14:16.719 1 HTTP status = 200
+2015-10-24 10:14:16.719 1 HTTP reason = OK
+2015-10-24 10:14:16.719 1 HTTP version = HTTP/1.1
+2015-10-24 10:14:16.719 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-24 10:14:16.721 1 ***** PRE-API TRACE *****
+2015-10-24 10:14:16.721 1 HTTP method = GET
+2015-10-24 10:14:16.721 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069/summary
+2015-10-24 10:14:16.721 1 Query String = {}
+2015-10-24 10:14:16.721 1 Header = Accept: application/json
+2015-10-24 10:14:16.721 1 Header = follow_redirect: true
+2015-10-24 10:14:17.084 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:14:17.084 1 HTTP method = GET
+2015-10-24 10:14:17.084 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069/summary
+2015-10-24 10:14:17.084 1 Header = Server: Zuora App
+2015-10-24 10:14:17.084 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:14:17.084 1 Header = Content-Length: 1388
+2015-10-24 10:14:17.084 1 Header = Expires: Sat, 24 Oct 2015 09:14:17 GMT
+2015-10-24 10:14:17.084 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:14:17.084 1 Header = Pragma: no-cache
+2015-10-24 10:14:17.084 1 Header = Date: Sat, 24 Oct 2015 09:14:17 GMT
+2015-10-24 10:14:17.084 1 Header = Connection: keep-alive
+2015-10-24 10:14:17.084 1 Header = Set-Cookie: ZSession=CJMiWqMq3cek5ugAqASfe89BsNWTccA0tSg60adY3HPuCuK-N6hHeVBsBiwRa9coFsh-bHDXaRuEUon_fkyQ-U3dnokhti-1Z7acA86QSFneQCFlUXVLR74eghGIK0DI4F9UBGl-bmb8CIVjW7Jt0HSb78ArLtS3HjU72nrWVyOK8insN-AaV-3zXIjUSugOdo5zPaKYfmIEy39xv1qsF70biIkP2rb_TtqC_64zLLlYd6bzOuVPyMad2FsrEfcj; Path=/; Secure; HttpOnly
+2015-10-24 10:14:17.084 1 HTTP status = 200
+2015-10-24 10:14:17.085 1 HTTP reason = OK
+2015-10-24 10:14:17.085 1 HTTP version = HTTP/1.1
+2015-10-24 10:14:17.085 1 API Response = {
+  "basicInfo": {
+    "NoDunning__c": null,
+    "accountNumber": "A00001069",
+    "balance": 0,
+    "batch": "Batch1",
+    "billCycleDay": 5,
+    "currency": "GBP",
+    "defaultPaymentMethod": null,
+    "id": "2c92c0f93c1deb6e013c296466fd3b25",
+    "lastInvoiceDate": null,
+    "lastPaymentAmount": null,
+    "lastPaymentDate": null,
+    "name": "Mawi Ltd",
+    "status": "Active"
+  },
+  "billToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "id": "2c92c0f83c1de760013c29646f3305e1",
+    "lastName": "O'Flaherty",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "invoices": [],
+  "payments": [],
+  "soldToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "id": "2c92c0f83c1de760013c29646f3305e1",
+    "lastName": "O'Flaherty",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "subscriptions": [],
+  "success": true,
+  "usage": []
+}
+2015-10-24 10:14:17.089 1 ***** PRE-API TRACE *****
+2015-10-24 10:14:17.089 1 HTTP method = GET
+2015-10-24 10:14:17.089 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069
+2015-10-24 10:14:17.089 1 Query String = {}
+2015-10-24 10:14:17.089 1 Header = Accept: application/json
+2015-10-24 10:14:17.089 1 Header = follow_redirect: true
+2015-10-24 10:14:17.386 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:14:17.387 1 HTTP method = GET
+2015-10-24 10:14:17.387 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069
+2015-10-24 10:14:17.387 1 Header = Server: Zuora App
+2015-10-24 10:14:17.387 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:14:17.387 1 Header = Content-Length: 1744
+2015-10-24 10:14:17.387 1 Header = Expires: Sat, 24 Oct 2015 09:14:17 GMT
+2015-10-24 10:14:17.387 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:14:17.387 1 Header = Pragma: no-cache
+2015-10-24 10:14:17.387 1 Header = Date: Sat, 24 Oct 2015 09:14:17 GMT
+2015-10-24 10:14:17.387 1 Header = Connection: keep-alive
+2015-10-24 10:14:17.387 1 Header = Set-Cookie: ZSession=HlcMIM-K9iH3Uu1ozhr5rk50eJKzEBnne5RRpstJTf3yO77-Sqsq1s54NvvKW3OcTdaWzYvZUKRywQyqpAeEqnqOZ7A0z1EIrEGionJJ4bvfwoKRo7u8XIQfk8jS86xgVzrrHHhYsXW6q7etPWDKDlEBCN177duzIoiKKd3GzQVXFGwIBfGeZhF66MJtO3L5svj3gLDrozDIBmoJaGqqtYG2kkdV8LoKeee8Mp5po4cy4XbJ2I7dSLbQQd58uw1s; Path=/; Secure; HttpOnly
+2015-10-24 10:14:17.387 1 HTTP status = 200
+2015-10-24 10:14:17.387 1 HTTP reason = OK
+2015-10-24 10:14:17.387 1 HTTP version = HTTP/1.1
+2015-10-24 10:14:17.387 1 API Response = {
+  "basicInfo": {
+    "NoDunning__c": null,
+    "accountNumber": "A00001069",
+    "batch": "Batch1",
+    "communicationProfileId": null,
+    "crmId": "001D000000rkZecIAE",
+    "id": "2c92c0f93c1deb6e013c296466fd3b25",
+    "invoiceTemplateId": "2c92c0f83b8dbf05013b8f8e374a2c96",
+    "name": "Mawi Ltd",
+    "notes": "Mawiltd",
+    "status": "Active"
+  },
+  "billToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "homePhone": "",
+    "lastName": "O'Flaherty",
+    "mobilePhone": "",
+    "nickname": "",
+    "otherPhone": "",
+    "otherPhoneType": null,
+    "personalEmail": "",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "billingAndPayment": {
+    "billCycleDay": 5,
+    "currency": "GBP",
+    "paymentGateway": null,
+    "paymentTerm": "Due Upon Receipt"
+  },
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "metrics": {
+    "balance": 0,
+    "contractedMrr": 0,
+    "creditBalance": 0,
+    "totalInvoiceBalance": 0
+  },
+  "soldToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "homePhone": "",
+    "lastName": "O'Flaherty",
+    "mobilePhone": "",
+    "nickname": "",
+    "otherPhone": "",
+    "otherPhoneType": null,
+    "personalEmail": "",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "success": true
+}
+2015-10-24 10:14:17.393 1 ***** PRE-API TRACE *****
+2015-10-24 10:14:17.393 1 HTTP method = POST
+2015-10-24 10:14:17.393 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts
+2015-10-24 10:14:17.393 1 Request Body = {
+  "ac_Willie__c": "ac_boy",
+  "ac_Winnie__c": "ac_Winnie",
+  "autoPay": true,
+  "billCycleDay": "15",
+  "billToContact": {
+  "address1": "address1",
+  "address2": "address2",
+  "city": "San Francisco",
+  "country": "USA",
+  "firstName": "John",
+  "lastName": "Doe",
+  "mobilePhone": "14156789012",
+  "state": "California",
+  "workEmail": "john.doe@zoura.com"
+},
+  "creditCard": {
+  "cardNumber": "4856200223544175",
+  "cardType": "Visa",
+  "expirationMonth": 2,
+  "expirationYear": 2014,
+  "securityCode": "111"
+},
+  "currency": "USD",
+  "name": "Soho",
+  "notes": "Soho Networks",
+  "paymentTerm": "Net 30",
+  "soldToContact": {
+  "address1": "address1",
+  "address2": "address2",
+  "city": "San Francisco",
+  "country": "USA",
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "mobilePhone": "14156789012",
+  "state": "California",
+  "workEmail": "jane.doe@zoura.com"
+}
+}
+2015-10-24 10:14:17.393 1 Header = Accept: application/json
+2015-10-24 10:14:17.393 1 Header = Content-Type: application/json
+2015-10-24 10:14:17.794 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:14:17.794 1 HTTP method = POST
+2015-10-24 10:14:17.794 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts
+2015-10-24 10:14:17.794 1 Header = Server: Zuora App
+2015-10-24 10:14:17.794 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:14:17.794 1 Header = Content-Length: 177
+2015-10-24 10:14:17.794 1 Header = Expires: Sat, 24 Oct 2015 09:14:17 GMT
+2015-10-24 10:14:17.794 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:14:17.795 1 Header = Pragma: no-cache
+2015-10-24 10:14:17.795 1 Header = Date: Sat, 24 Oct 2015 09:14:17 GMT
+2015-10-24 10:14:17.795 1 Header = Connection: keep-alive
+2015-10-24 10:14:17.795 1 Header = Set-Cookie: ZSession=-40kJRYZ4v47G0d6FxSMTuNnLz3Bt1AitUQJ2Gc_y91UyEZgzlnoZa-zIXTS_65jAHdO2s6LFnAUncLgUv8i0p7H3bB8Mo3r24a-TI4yocQPezg_9K6hzX8Pc9DicVr0OS4o1gKP7IkV8hhg3UTJxlHSPxVR0zoAB-BGNzIg9HsF07dkmfsRjD3HLhrWrw8hvLx3jAdXS4oxu5_pJcOMAAQAcoRMolaSABpvHWd65lMx1fsraNNyUPoUFIFQjjJD; Path=/; Secure; HttpOnly
+2015-10-24 10:14:17.795 1 HTTP status = 200
+2015-10-24 10:14:17.795 1 HTTP reason = OK
+2015-10-24 10:14:17.795 1 HTTP version = HTTP/1.1
+2015-10-24 10:14:17.795 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "processId": "AE968B1A0390527F",
+  "reasons": [{
+    "code": 51001020,
+    "message": "Invalid custom fields: 'ac_Willie__c,ac_Winnie__c'."
+  }],
+  "success": false
+}
+2015-10-24 10:19:21.787 1 ***** SDK loggers initialized *****
+2015-10-24 10:19:21.817 1 ***** PRE-API TRACE *****
+2015-10-24 10:19:21.817 1 HTTP method = POST
+2015-10-24 10:19:21.817 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-24 10:19:21.817 1 Request Body = {}
+2015-10-24 10:19:21.817 1 Header = Accept: application/json
+2015-10-24 10:19:21.817 1 Header = Content-Type: application/json
+2015-10-24 10:19:21.817 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-24 10:19:21.817 1 Header = apiSecretAccessKey: Herbert01
+2015-10-24 10:19:22.010 1 HTTPClient Settings: org.apache.http.impl.client.HttpClientBuilder@442c282
+2015-10-24 10:19:23.444 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:19:23.444 1 HTTP method = POST
+2015-10-24 10:19:23.444 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-24 10:19:23.444 1 Header = Server: Zuora App
+2015-10-24 10:19:23.444 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:19:23.444 1 Header = Content-Length: 22
+2015-10-24 10:19:23.444 1 Header = Expires: Sat, 24 Oct 2015 09:19:23 GMT
+2015-10-24 10:19:23.444 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:19:23.445 1 Header = Pragma: no-cache
+2015-10-24 10:19:23.445 1 Header = Date: Sat, 24 Oct 2015 09:19:23 GMT
+2015-10-24 10:19:23.445 1 Header = Connection: keep-alive
+2015-10-24 10:19:23.445 1 Header = Set-Cookie: ZSession=brEVryFBSa1NC-GXuAlbKTyXLGrKHJ4vC_hWO1TiB9HWf36TNB97TcaZMz-IfqqWtqosZVyD42dFKo1skRIPdjw342oy25QYtuy2_U__lqrCeWTQyLBmjufNVYH3E7OWqh8M6fdFMbp7EtX1M9Kvw_R3tjVjvzP0L2wZAr5wc7mcLjUy-oPiodyBCEMloBKwkYLpOfgiXGEKO-z_OpLsFKBsdthEm-qXfIhny0gD5SJOWpbzfeUb_fV4x6AoIOLk; Path=/; Secure; HttpOnly
+2015-10-24 10:19:23.445 1 HTTP status = 200
+2015-10-24 10:19:23.445 1 HTTP reason = OK
+2015-10-24 10:19:23.445 1 HTTP version = HTTP/1.1
+2015-10-24 10:19:23.445 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-24 10:19:23.447 1 ***** PRE-API TRACE *****
+2015-10-24 10:19:23.447 1 HTTP method = GET
+2015-10-24 10:19:23.447 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069/summary
+2015-10-24 10:19:23.447 1 Query String = {}
+2015-10-24 10:19:23.447 1 Header = Accept: application/json
+2015-10-24 10:19:23.447 1 Header = follow_redirect: true
+2015-10-24 10:19:24.032 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:19:24.033 1 HTTP method = GET
+2015-10-24 10:19:24.033 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069/summary
+2015-10-24 10:19:24.033 1 Header = Server: Zuora App
+2015-10-24 10:19:24.033 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:19:24.033 1 Header = Content-Length: 1388
+2015-10-24 10:19:24.033 1 Header = Expires: Sat, 24 Oct 2015 09:19:24 GMT
+2015-10-24 10:19:24.033 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:19:24.033 1 Header = Pragma: no-cache
+2015-10-24 10:19:24.033 1 Header = Date: Sat, 24 Oct 2015 09:19:24 GMT
+2015-10-24 10:19:24.033 1 Header = Connection: keep-alive
+2015-10-24 10:19:24.033 1 Header = Set-Cookie: ZSession=mnTYaPTrmiagFpA3UWNNbqZmRyBYjHCz-SmMx8Y8FO3TAIDYDz0dtQmSG4NhQ3ZMu52mEWY--ZNs-Mgu5eWx1YrSRLAykLa_olyikFserhExG_4xmhM5eJG695wDHqhhA9WxapwBbLR6PYG4EcKEGWwYNb6lnVOOCvcQrK2WqpkzRxVg2vrn7Y3UAMsIG0h9MR8Y7bk2ulQ6-TtzCDC-kopVoHAnYZjl-ftpsMJ2HbAjWja1YOjFnIOud4rB1nVp; Path=/; Secure; HttpOnly
+2015-10-24 10:19:24.034 1 HTTP status = 200
+2015-10-24 10:19:24.034 1 HTTP reason = OK
+2015-10-24 10:19:24.034 1 HTTP version = HTTP/1.1
+2015-10-24 10:19:24.034 1 API Response = {
+  "basicInfo": {
+    "NoDunning__c": null,
+    "accountNumber": "A00001069",
+    "balance": 0,
+    "batch": "Batch1",
+    "billCycleDay": 5,
+    "currency": "GBP",
+    "defaultPaymentMethod": null,
+    "id": "2c92c0f93c1deb6e013c296466fd3b25",
+    "lastInvoiceDate": null,
+    "lastPaymentAmount": null,
+    "lastPaymentDate": null,
+    "name": "Mawi Ltd",
+    "status": "Active"
+  },
+  "billToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "id": "2c92c0f83c1de760013c29646f3305e1",
+    "lastName": "O'Flaherty",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "invoices": [],
+  "payments": [],
+  "soldToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "id": "2c92c0f83c1de760013c29646f3305e1",
+    "lastName": "O'Flaherty",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "subscriptions": [],
+  "success": true,
+  "usage": []
+}
+2015-10-24 10:19:24.038 1 ***** PRE-API TRACE *****
+2015-10-24 10:19:24.038 1 HTTP method = GET
+2015-10-24 10:19:24.038 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069
+2015-10-24 10:19:24.038 1 Query String = {}
+2015-10-24 10:19:24.038 1 Header = Accept: application/json
+2015-10-24 10:19:24.038 1 Header = follow_redirect: true
+2015-10-24 10:19:24.390 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:19:24.390 1 HTTP method = GET
+2015-10-24 10:19:24.390 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069
+2015-10-24 10:19:24.390 1 Header = Server: Zuora App
+2015-10-24 10:19:24.390 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:19:24.390 1 Header = Content-Length: 1744
+2015-10-24 10:19:24.390 1 Header = Expires: Sat, 24 Oct 2015 09:19:24 GMT
+2015-10-24 10:19:24.390 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:19:24.390 1 Header = Pragma: no-cache
+2015-10-24 10:19:24.390 1 Header = Date: Sat, 24 Oct 2015 09:19:24 GMT
+2015-10-24 10:19:24.390 1 Header = Connection: keep-alive
+2015-10-24 10:19:24.390 1 Header = Set-Cookie: ZSession=2_Ej-MZdaRSn-RmyVe3YB2qcw2mt0xF6NMPAt8kaoZvXXgVnj0zEuSteO1Rr6hNummunSr1qhgOuvysnjKMJ7uOSCd-cukX4lbceOJ_hax32IkC05A8gtH6SvW4mKi0QRUNY7AVZGBQKV59hr8j45t-iHU574DGzGuJ5biDeQV910hICRAz6ancKWPfJ5lziLT5xR01R-DNXnJFOKqQNZQyIFRmuIqF_5Pcyy3tCyMFCGEs_p2zjSSM1x5GLhNK_; Path=/; Secure; HttpOnly
+2015-10-24 10:19:24.390 1 HTTP status = 200
+2015-10-24 10:19:24.391 1 HTTP reason = OK
+2015-10-24 10:19:24.391 1 HTTP version = HTTP/1.1
+2015-10-24 10:19:24.391 1 API Response = {
+  "basicInfo": {
+    "NoDunning__c": null,
+    "accountNumber": "A00001069",
+    "batch": "Batch1",
+    "communicationProfileId": null,
+    "crmId": "001D000000rkZecIAE",
+    "id": "2c92c0f93c1deb6e013c296466fd3b25",
+    "invoiceTemplateId": "2c92c0f83b8dbf05013b8f8e374a2c96",
+    "name": "Mawi Ltd",
+    "notes": "Mawiltd",
+    "status": "Active"
+  },
+  "billToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "homePhone": "",
+    "lastName": "O'Flaherty",
+    "mobilePhone": "",
+    "nickname": "",
+    "otherPhone": "",
+    "otherPhoneType": null,
+    "personalEmail": "",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "billingAndPayment": {
+    "billCycleDay": 5,
+    "currency": "GBP",
+    "paymentGateway": null,
+    "paymentTerm": "Due Upon Receipt"
+  },
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "metrics": {
+    "balance": 0,
+    "contractedMrr": 0,
+    "creditBalance": 0,
+    "totalInvoiceBalance": 0
+  },
+  "soldToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "homePhone": "",
+    "lastName": "O'Flaherty",
+    "mobilePhone": "",
+    "nickname": "",
+    "otherPhone": "",
+    "otherPhoneType": null,
+    "personalEmail": "",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "success": true
+}
+2015-10-24 10:19:24.397 1 ***** PRE-API TRACE *****
+2015-10-24 10:19:24.397 1 HTTP method = POST
+2015-10-24 10:19:24.397 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts
+2015-10-24 10:19:24.397 1 Request Body = {
+  "ac_Willie__c": "ac_boy",
+  "ac_Winnie__c": "ac_Winnie",
+  "autoPay": true,
+  "billCycleDay": "15",
+  "billToContact": {
+  "address1": "address1",
+  "address2": "address2",
+  "city": "San Francisco",
+  "country": "USA",
+  "firstName": "John",
+  "lastName": "Doe",
+  "mobilePhone": "14156789012",
+  "state": "California",
+  "workEmail": "john.doe@zoura.com"
+},
+  "creditCard": {
+  "cardNumber": "4856200223544175",
+  "cardType": "Visa",
+  "expirationMonth": 2,
+  "expirationYear": 2014,
+  "securityCode": "111"
+},
+  "currency": "USD",
+  "name": "Soho",
+  "notes": "Soho Networks",
+  "paymentTerm": "Net 30",
+  "soldToContact": {
+  "address1": "address1",
+  "address2": "address2",
+  "city": "San Francisco",
+  "country": "USA",
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "mobilePhone": "14156789012",
+  "state": "California",
+  "workEmail": "jane.doe@zoura.com"
+}
+}
+2015-10-24 10:19:24.397 1 Header = Accept: application/json
+2015-10-24 10:19:24.397 1 Header = Content-Type: application/json
+2015-10-24 10:19:24.811 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:19:24.812 1 HTTP method = POST
+2015-10-24 10:19:24.812 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts
+2015-10-24 10:19:24.812 1 Header = Server: Zuora App
+2015-10-24 10:19:24.812 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:19:24.812 1 Header = Content-Length: 177
+2015-10-24 10:19:24.812 1 Header = Expires: Sat, 24 Oct 2015 09:19:24 GMT
+2015-10-24 10:19:24.812 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:19:24.812 1 Header = Pragma: no-cache
+2015-10-24 10:19:24.812 1 Header = Date: Sat, 24 Oct 2015 09:19:24 GMT
+2015-10-24 10:19:24.812 1 Header = Connection: keep-alive
+2015-10-24 10:19:24.812 1 Header = Set-Cookie: ZSession=jMCRUujrJL_mEAA4-SxDOknRSnuaH5SJDSEffezKt1ZEmLnB4uQpXxSfkLP1dq1XSkrd9TesZIusa6U1oZoRmfplSJ1eXRgsDutUNTMTasTub0QqTYbuWZ0wLYc1Ch8Of2u8YEV2ashJYWorj_Gk44eIpJ0RRo2Llkey8Z58P4abfNAt8aHIoku25hNm8Gwir2LqBDsQrPuG8c0v0IE35oskKTG32pG0JD21j2JBYzsmqcFYjiPgJR2GEHkZCgpz; Path=/; Secure; HttpOnly
+2015-10-24 10:19:24.813 1 HTTP status = 200
+2015-10-24 10:19:24.813 1 HTTP reason = OK
+2015-10-24 10:19:24.813 1 HTTP version = HTTP/1.1
+2015-10-24 10:19:24.813 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "processId": "7BEC8E8F27A51D1C",
+  "reasons": [{
+    "code": 51001020,
+    "message": "Invalid custom fields: 'ac_Willie__c,ac_Winnie__c'."
+  }],
+  "success": false
+}

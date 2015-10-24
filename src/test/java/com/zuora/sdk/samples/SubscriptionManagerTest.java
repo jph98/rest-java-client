@@ -2,8 +2,8 @@ package com.zuora.sdk.samples;
 
 import org.junit.Test;
 
-import com.zuora.sdk.lib.ZAPIResp;
-import com.zuora.sdk.lib.ZClient;
+import com.zuora.sdk.http.ZAPIResp;
+import com.zuora.sdk.http.ZClient;
 
 public class SubscriptionManagerTest {
    static final String SAMPLE_ACCOUNT_KEY = "A00001069";
@@ -18,7 +18,7 @@ public class SubscriptionManagerTest {
 
       // Connect to the endPoint using default tenant's credentials
       // and practice APIs
-      ZAPIResp resp = null;
+      ZAPIResp resp;
       if (new ConnectionManager().isConnected(zClient)) {
         resp = subscriptionManager.getAll(SAMPLE_ACCOUNT_KEY);
 

@@ -2,7 +2,7 @@ package com.zuora.sdk.samples;
 
 import org.junit.Test;
 
-import com.zuora.sdk.lib.ZClient;
+import com.zuora.sdk.http.ZClient;
 
 public class RevenueRecognitionRuleManagerTest {
    static final String SAMPLE_SUBSCRIPTION_CHARGE_KEY = "402892bf40709ec701407bd4ad040139";

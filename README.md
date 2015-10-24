@@ -1,226 +1,255 @@
+Zuora REST Client
+=================
+
 Pre-requisites
+--------------
 
-    The following libraries are required to be downloaded:
+The following libraries are required to be downloaded:
 
-    java 6
-    apache httpclient 4.2.3
-    apache httpcore 4.2.2
-    apache httpmime 4.2.3
-    java-json.jar
+* java 7
+* apache httpclient 4.2.3
+* apache httpcore 4.2.2
+* apache httpmime 4.2.3
+* java-json.jar
 
-    You also need a trial account in any Zuora application, go get a free trial 
-    at http://info.zuora.com/zuora-free-trial.html and then 
-    update `src/main/resources/com/zuora/sdk/resource/ZConfig.properties` with your credential.
+You also need a trial account in any Zuora application, go get a free trial 
+at http://info.zuora.com/zuora-free-trial.html and then 
+update your credentials in: 
+
+    src/main/resources/com/zuora/sdk/resource/ZConfig.properties
+
 
 Version
+---
 
-    1.0
+1.0
 
 Description
+---
 
-    zuora-rest-java facilitates developers to build Java based
-    Zuora applications without being burdened by the underlying HTTP mechanics,
-    multi-threading, proxy, SSL security, error handling, and logging support 
-    required for debugging and troubleshooting. Complex JSON responses and call
-    arguments can also be manipulated using simple Java setter and getter methods.
+zuora-rest-java allows developers to build Java based
+Zuora applications without being burdened by the underlying HTTP mechanics,
+multi-threading, proxy, SSL security, error handling, and logging support 
+required for debugging and troubleshooting. Complex JSON responses and call
+arguments can also be manipulated using simple Java setter and getter methods.
 
-    The sample code demonstrates how all Zuora REST resources can be modeled
-    as "resource manager". There are 8 resource manager classes: Connection,
-    Catalog, Payment_Method, Account, Subscription, Transaction, Operation
-    and Usage. Three sample usage files are also provided.
+The sample code demonstrates how all Zuora REST resources can be modeled
+as "resource manager". There are 8 resource manager classes: Connection,
+Catalog, Payment_Method, Account, Subscription, Transaction, Operation
+and Usage. Three sample usage files are also provided.
+
+n.b. You must check that a connection is active before using the provided managers
+(e.g. AccountManager)...
+
+    ConnectionManager manager = new ConnectionManager();
+    if (manager.isConnected(zClient)) {
+        accountManager.getSummary(SAMPLE_ACCOUNT_KEY);
+    }      
 
 Features
+---
 
-    . Environment neutral. Support JSE or JEE
-
-    . Support configuration for local installation needs
-
-    . Provide full API pre-call and post-call trace for easy debugging
-
-    . Provide log files as support documentation
-
-    . Support multi-threading environment with http connection pooling
-
-    . Navigate call arguments and JSON response string using setter and getter
-
-    . Support VERIFY NONE and VERIFY PEER for SSL invocations
-
-    . Support proxy, including basic authentication
+* Environment neutral. Support JSE or JEE
+* Support configuration for local installation needs
+* Provide full API pre-call and post-call trace for easy debugging
+* Provide log files as support documentation
+* Support multi-threading environment with http connection pooling
+* Navigate call arguments and JSON response string using setter and getter
+* Support VERIFY NONE and VERIFY PEER for SSL invocations
+* Support proxy, including basic authentication
 
 Configuration
+---
 
-    Support global configuration via a configuration properties file in the
-    "resource" subdirectory. This can be customized and built into the target
-    jar file and used by the developers as the default configuration and
-    further simply code.
+Support global configuration via a configuration properties file in the
+"resource" subdirectory. This can be customized and built into the target
+jar file and used by the developers as the default configuration and
+further simply code.
 
-    Different applications can also use different configuration. This is
-    achieved by including a local copy of a ZConfig.properties in the working
-    directory (i.e. pwd) where the application runs.
+Different applications can also use different configuration. This is
+achieved by including a local copy of a ZConfig.properties in the working
+directory (i.e. pwd) where the application runs.
 
-    Change Installation specific properties as needed. Most default settings
-    work in most installations, but some are installation specific properties:
+Change Installation specific properties as needed. Most default settings
+work in most installations, but some are installation specific properties:
 
-    . Setting default tenant's credentials enables a connect call to be made
-      without arguments - remove security sensitive information from developers.
+* Setting default tenant's credentials enables a connect call to be made
+without arguments - remove security sensitive information from developers.
 
-    . if using forwarding proxy server set proxy.used to true
+* if using forwarding proxy server set proxy.used to true
 
-    . If the proxy uses basic authentication set proxy.auth to true, and its
-      credentials in proxy.user and proxy.password.
+* If the proxy uses basic authentication set proxy.auth to true, and its
+credentials in proxy.user and proxy.password.
 
-    . When developing switch on api trace for debugging. Set api.trace to true.
+* When developing switch on api trace for debugging. Set api.trace to true.
 
-    . If you are worried about the authenticity of the api end point
-      set ssl.verify to true. This may slightly degrade performance on CONNECT
-      calls.
+* If you are worried about the authenticity of the api end point
+set ssl.verify to true. This may slightly degrade performance on CONNECT
+calls.
 
 Logging
+---
 
-    SDK puts all log files in the subdirectory "sdk_logs" under the current
-    working directory where the application runs.
+SDK puts all log files in the subdirectory "sdk_logs" under the current
+working directory where the application runs.
 
-    sdk.log is for the sdk itself.
+* sdk.log is for the sdk itself.
+* api_trace.log is for API debugging.
 
-    api_trace.log is for API debugging.
+When reporting an incident report to Zuora, both logs should be sent as
+documentation.
 
-    When reporting an incident report to Zuora, both logs should be sent as
-    documentation.
-
-    Each log files has a 4M size limit and up to 3 generations before it is
-    wrapped around.
+Each log files has a 4M size limit and up to 3 generations before it is
+wrapped around.
 
 Examples
+---
 
-    Refer to the samples for the following discussion. You
-    can write your own resource managers or any other abstraction; they are only
-    there to illustrate one way of designing application objects around the
-    APIs.
+Refer to the samples for the following discussion. You
+can write your own resource managers or any other abstraction; they are only
+there to illustrate one way of designing application objects around the
+APIs.
 
-    1. import the necessary jars
+[1] import the necessary jars
 
-    2. All calls must be routed through ZClient. To create a ZClient:
 
-            ZClient zClient = new ZClient();
+[2] All calls must be routed through ZClient. To create a ZClient:
 
-       Use the get, put, post, and delete methods to send a REST API.
 
-    3. Pass the zClient object to the resource manager object.
+    ZClient zClient = new ZClient();
 
-    4. Prepare arguments
+Use the GET, PUT, POST, and DELETE methods to send a REST API.
 
-       All arguments are ultimately put inside a JSON structure. Some arguments,
-       mandatory or optional, are required to be created in some nested structure.
+[3] Pass the zClient object to the resource manager object.
 
-       Use the ZAPIArgs class which allows argument object to be manipulated via
-       its setter and getter methods. Whenever there is a need for a nested
-       argument structure, use new ZAPIArgs. Refer to sample code and the
-       corresponding published call arguments in the API documentation
-       for more sample usage.
 
-       There are 4 key attributes in ZAPIArgs that are needed to make a REST
-       API call:
+Prepare arguments
+---
 
-       uri
-        Refers to the resource uri (excluding the API endpoint). For instance
-            ZAPIArgs args =  new ZAPIArgs();
-            args.set("uri", "/catalog/products");
+All arguments are ultimately put inside a JSON structure. Some arguments,
+mandatory or optional, are required to be created in some nested structure.
 
-        Predefined resource endpoints are provided as samples and can be found
-        in ResourceEndpoints.java
+Use the ZAPIArgs class which allows argument object to be manipulated via
+its setter and getter methods. Whenever there is a need for a nested
+argument structure, use new ZAPIArgs. Refer to sample code and the
+corresponding published call arguments in the API documentation
+for more sample usage.
 
-       headers
-        Used as fields in request header. Only relevant to the CONNECT API
-            ZAPIArgs args =  new ZAPIArgs();
-            args.set("headers", new ZAPIArgs());
-            args.getArg("headers").set("apiAccessKeyId", "your_username");
-            args.getArg("headers").set("apiSecretAccessKey", "password");
+There are 4 key attributes in ZAPIArgs that are needed to make a REST
+API call:
 
-        If indded th ZConfig.properties file has the default tenant's credentials
-        configured, these headers will not be needed when connecting to
-        the default tenant.
+* URI - Refers to the resource uri (excluding the API endpoint). For instance
 
-       queryString
-        Also known as HTTP parameters. For instance:
 
-            ZAPIArgs args =  new ZAPIArgs();
-            args.set("query_string", new ZAPIArgs());
-            args.getArg("query_string").set("pageSize", 20);
+    ZAPIArgs args =  new ZAPIArgs();
+    args.set("uri", "/catalog/products");
 
-       reqBody
-        Most POST and PUT APIs require substantial amount of arguments to be set
-        up in the request body of the HTTP request. This needs to be set up
-        before the request can be sent to the service provider.
+Predefined resource endpoints are provided as samples and can be found
+in ResourceEndpoints.java
 
-            ZAPIArgs args =  new ZAPIArgs();
-            args.set("req_body", new ZAPIArgs());
-            args.getArg("req_body").set("name", "api_tester");
-            args.getArg("req_body").set("billToContact", new ZAPIArgs());
-            args.getArg("req_body").getArg("billToContact").set("firstName", "api");
-            args.getArg("req_body").getArg("billToContact").set("lastName", "Tester");
+* Headers - Used as fields in request header. Only relevant to the CONNECT API
 
-       Consult Zuora REST API documentation for details of the call arguments.
 
-    5. Authenticate to the endpoint using tenant's user id and password:
+    ZAPIArgs args =  new ZAPIArgs();
+    args.set("headers", new ZAPIArgs());
+    args.getArg("headers").set("apiAccessKeyId", "your_username");
+    args.getArg("headers").set("apiSecretAccessKey", "password");
 
-        connect()           # connect with pre-configured tenant's credentials
+If indeed th ZConfig.properties file has the default tenant's credentials
+configured, these headers will not be needed when connecting to
+the default tenant.
+
+* QueryString - Also known as HTTP parameters. For instance:
+
+
+    ZAPIArgs args =  new ZAPIArgs();
+    args.set("query_string", new ZAPIArgs());
+    args.getArg("query_string").set("pageSize", 20);
+
+* reqBody - Most POST and PUT APIs require substantial amount of arguments to be set
+up in the request body of the HTTP request. This needs to be set up
+before the request can be sent to the service provider.
+
+
+    ZAPIArgs args =  new ZAPIArgs();
+    args.set("req_body", new ZAPIArgs());
+    args.getArg("req_body").set("name", "api_tester");
+    args.getArg("req_body").set("billToContact", new ZAPIArgs());
+    args.getArg("req_body").getArg("billToContact").set("firstName", "api");
+    args.getArg("req_body").getArg("billToContact").set("lastName", "Tester");
+
+
+Consult Zuora REST API docs (https://knowledgecenter.zuora.com/BC_Developers/REST_API) 
+for details of the call arguments.
+
+Authenticate to the endpoint using tenant's user id and password:
+---
+
+    connect()           # connect with pre-configured tenant's credentials
         
-       To provide tenant's credentials on the fly:
+To provide tenant's credentials on the fly:
 
-        connect("box.net", "secretPassword")
+    connect("box.net", "secretPassword")
 
-    6. Check response
+Check response
+---
 
-       Both the HTTP Status Code and Response Phrase are always included
-       in the response object ZAPIResp. If the invocation had been successful,
-       ZAPIResp also contains the body of the HTTP response.
+Both the HTTP Status Code and Response Phrase are always included
+in the response object ZAPIResp. If the invocation had been successful,
+ZAPIResp also contains the body of the HTTP response.
 
-       The response attributes can be parsed using getter method. For
-       instance:
+The response attributes can be parsed using getter method. For
+instance:
 
-            response.get("nextPage")
+    response.get("nextPage")
 
-       To reach the response in a nested structure, use the getResp method.
+To reach the response in a nested structure, use the getResp method.
 
-       Refer to Zuora REST API documentation for details of the call arguments
-       and the sample resource managers for more examples.
+Refer to Zuora REST API documentation for details of the call arguments
+and the sample resource managers for more examples.
 
-    7. Catch exceptions
+Catch exceptions
+---
 
-       If the syntax of the arguments are wrong, for example, missing body or
-       presence of extraneous arguments, the SDK will raise an
-       IllegalArgumentException with the corresponding diagnostic message.
+If the syntax of the arguments are wrong, for example, missing body or
+presence of extraneous arguments, the SDK will raise an
+IllegalArgumentException with the corresponding diagnostic message.
 
-       If there is an exception while the call is in progress, a RuntimeException
-       will be raised, and the corresponding stack trace will also be
-       logged in both the sdk and api_trace log files.
+If there is an exception while the call is in progress, a RuntimeException
+will be raised, and the corresponding stack trace will also be
+logged in both the sdk and api_trace log files.
 
-    8. Follow the "nextPage"
-       When issuing a GET call, sometimes there are multiple pages of response
-       returned.
+Follow the "nextPage"
+---
 
-       This is indicated by the presence of the "nextPage" key in the response
-       body.
+When issuing a GET call, sometimes there are multiple pages of response returned.
 
-       For example, in the get_all method of the PaymentMethod resource
-       manager, if the nextPage key is present in the response, pass nextPage
-       as the url and make a recursive call.
+This is indicated by the presence of the "nextPage" key in the response body.
 
-How To 
+For example, in the get_all method of the PaymentMethod resource
+manager, if the nextPage key is present in the response, pass nextPage
+as the url and make a recursive call.
 
-	1. To run the samples:
-		
-		mvn test
-		
-	2. To import this maven project into Eclipse:
-		
-		mvn eclipse:eclipse
+How To
+---
+
+[1] To run the samples:
+
+
+    mvn test
+
+[2] To import this maven project into Eclipse:
+	
+	
+    mvn eclipse:eclipse
 	
 Author
+---
 
-    Zuora Inc.
+Zuora Inc.
 
 Copyright
+---
 
-    Copyright (c) 2013 Zuora Inc. (http://www.zuora.com).
-    See License for details
+Copyright (c) 2013 Zuora Inc. (http://www.zuora.com).
+See License for details

@@ -1,0 +1,7 @@
+CHANGELOG
+---------
+
+* Upgrade httpclient and various components to 4.5.1, migrated over from deprecated parts
+* Configured console based logging as well as file based logging
+* Converted README to true markdown and emphasis of connection establishment to do work with Zuora
+* Repackaged, reformatted (sorry) and cleaned up code
