@@ -23,9 +23,9 @@ com.zuora.sdk.http.ZAPI.tracePostAPIResponse(ZAPI.java:321)
 com.zuora.sdk.http.ZAPI.execPostAPI(ZAPI.java:213)
 com.zuora.sdk.http.ZAPI.execPostAPI(ZAPI.java:153)
 com.zuora.sdk.http.ZClient.post(ZClient.java:148)
-com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:32)
-com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:50)
-com.zuora.sdk.samples.AccountManagerTest.test_account_manager(AccountManagerTest.java:22)
+com.zuora.examples.ConnectionManager.isConnected(ConnectionManager.java:32)
+com.zuora.examples.ConnectionManager.isConnected(ConnectionManager.java:50)
+com.zuora.examples.AccountServiceTest.test_account_manager(AccountManagerTest.java:22)
 sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,9 +57,9 @@ com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
 2015-10-23 03:31:51.071 1 com.zuora.sdk.http.ZAPI.execPostAPI(ZAPI.java:220)
 com.zuora.sdk.http.ZAPI.execPostAPI(ZAPI.java:153)
 com.zuora.sdk.http.ZClient.post(ZClient.java:148)
-com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:32)
-com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:50)
-com.zuora.sdk.samples.AccountManagerTest.test_account_manager(AccountManagerTest.java:22)
+com.zuora.examples.ConnectionManager.isConnected(ConnectionManager.java:32)
+com.zuora.examples.ConnectionManager.isConnected(ConnectionManager.java:50)
+com.zuora.examples.AccountServiceTest.test_account_manager(AccountManagerTest.java:22)
 sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -88,9 +88,9 @@ java.lang.reflect.Method.invoke(Method.java:606)
 com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
 
 2015-10-23 03:31:51.072 1 com.zuora.sdk.http.ZClient.post(ZClient.java:153)
-com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:32)
-com.zuora.sdk.samples.ConnectionManager.isConnected(ConnectionManager.java:50)
-com.zuora.sdk.samples.AccountManagerTest.test_account_manager(AccountManagerTest.java:22)
+com.zuora.examples.ConnectionManager.isConnected(ConnectionManager.java:32)
+com.zuora.examples.ConnectionManager.isConnected(ConnectionManager.java:50)
+com.zuora.examples.AccountServiceTest.test_account_manager(AccountManagerTest.java:22)
 sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
 sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -213,3 +213,22 @@ com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
 2015-10-25 07:31:45.978 1 rest.api.version set to v1
 2015-10-25 07:31:45.978 1 ssl.verify.peer set to false
 2015-10-25 07:31:45.978 1 Configuration file com/zuora/sdk/resource/ZConfig.properties successfully loaded.
+2015-10-25 09:16:54.089 1 ***** SDK loggers initialized *****
+2015-10-25 09:16:54.091 1 configFilePath=com/zuora/sdk/resource/ZConfig.properties opened successfully
+2015-10-25 09:16:54.091 1 Loading configuration file com/zuora/sdk/resource/ZConfig.properties ...
+2015-10-25 09:16:54.093 1 api.trace set to true
+2015-10-25 09:16:54.093 1 default.tenant.password set to ********
+2015-10-25 09:16:54.093 1 default.tenant.user.id set to jon.holloway@brightpearl.com
+2015-10-25 09:16:54.093 1 http.connect.timeout set to 30000
+2015-10-25 09:16:54.093 1 http.max.connection.pool.size set to 30
+2015-10-25 09:16:54.093 1 http.receive.timeout set to 30000
+2015-10-25 09:16:54.093 1 http.user.agent set to z_sdk_v1.0
+2015-10-25 09:16:54.093 1 proxy.auth set to false
+2015-10-25 09:16:54.093 1 proxy.password set to ********
+2015-10-25 09:16:54.093 1 proxy.url set to http://www.mycompany.com:8000
+2015-10-25 09:16:54.093 1 proxy.used set to false
+2015-10-25 09:16:54.093 1 proxy.user set to bigbrother
+2015-10-25 09:16:54.093 1 rest.api.endpoint set to https://apisandbox-api.zuora.com/rest
+2015-10-25 09:16:54.094 1 rest.api.version set to v1
+2015-10-25 09:16:54.094 1 ssl.verify.peer set to false
+2015-10-25 09:16:54.094 1 Configuration file com/zuora/sdk/resource/ZConfig.properties successfully loaded.

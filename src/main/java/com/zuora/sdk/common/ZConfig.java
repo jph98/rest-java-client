@@ -17,12 +17,23 @@ import java.util.TreeMap;
 
 public class ZConfig {
 
+    public static final String ZCONFIG_PATH = "ZCONFIG_PATH";
     private static ZConfig instance_;
     private Properties zProperties;
     private String configFilePath;
     private InputStream is;
 
     public ZConfig() {
+
+        if (System.getProperty(ZCONFIG_PATH) != null) {
+
+            File configFile = new File(System.getProperty(ZCONFIG_PATH), ZConstants.CONFIG_FILE);
+
+            if (configFile.exists()) {
+                configFilePath = configFile.toString();
+                System.out.println("Found user supplied config file at " + System.getProperty(ZCONFIG_PATH));
+            }
+        }
 
         // local config file supercedes the one in SDK
         configFilePath = new File(System.getProperty("user.dir"), ZConstants.CONFIG_FILE).toString();
