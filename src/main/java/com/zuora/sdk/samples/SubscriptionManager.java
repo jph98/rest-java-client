@@ -18,7 +18,7 @@ public class SubscriptionManager {
     private String accountKey;
     private String subscriptionKey;
 
-    SubscriptionManager(ZClient zClient) {
+    public SubscriptionManager(ZClient zClient) {
         this.zClient = zClient;
     }
 

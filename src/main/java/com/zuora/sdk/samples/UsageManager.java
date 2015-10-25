@@ -22,7 +22,7 @@ public class UsageManager {
     private ZClient zClient;
     private String accountKey;
 
-    UsageManager(ZClient zClient) {
+    public UsageManager(ZClient zClient) {
         this.zClient = zClient;
     }
 

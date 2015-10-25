@@ -4,7 +4,7 @@ import com.zuora.sdk.http.ZAPIResp;
 
 import java.util.Iterator;
 
-public class ZAPIRespIterator {
+public class    ZAPIRespIterator {
 
     public static void iterateZAPIResp(ZAPIResp resp) {
         // Iterate the entire response set based on ZAPIResp

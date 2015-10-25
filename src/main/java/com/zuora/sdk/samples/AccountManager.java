@@ -17,7 +17,7 @@ public class AccountManager {
     private ZClient zClient;
     private String accountKey;
 
-    AccountManager(ZClient zClient) {
+    public AccountManager(ZClient zClient) {
         this.zClient = zClient;
     }
 

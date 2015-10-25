@@ -13,7 +13,7 @@ import com.zuora.sdk.http.ZClient;
 public class CatalogManager {
     private ZClient zClient;
 
-    CatalogManager(ZClient zClient) {
+    public CatalogManager(ZClient zClient) {
         this.zClient = zClient;
     }
 

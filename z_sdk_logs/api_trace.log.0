@@ -914,3 +914,1803 @@ com.intellij.rt.execution.application.AppMain.main(AppMain.java:140)
   }],
   "success": false
 }
+2015-10-24 10:35:47.999 1 ***** SDK loggers initialized *****
+2015-10-24 10:35:48.021 1 ***** PRE-API TRACE *****
+2015-10-24 10:35:48.021 1 HTTP method = POST
+2015-10-24 10:35:48.021 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-24 10:35:48.021 1 Request Body = {}
+2015-10-24 10:35:48.021 1 Header = Accept: application/json
+2015-10-24 10:35:48.021 1 Header = Content-Type: application/json
+2015-10-24 10:35:48.021 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-24 10:35:48.021 1 Header = apiSecretAccessKey: Herbert01
+2015-10-24 10:35:48.196 1 HTTPClient Settings: org.apache.http.impl.client.HttpClientBuilder@5c260a45
+2015-10-24 10:35:49.302 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:35:49.302 1 HTTP method = POST
+2015-10-24 10:35:49.302 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-24 10:35:49.302 1 Header = Server: Zuora App
+2015-10-24 10:35:49.302 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:35:49.302 1 Header = Content-Length: 22
+2015-10-24 10:35:49.302 1 Header = Expires: Sat, 24 Oct 2015 09:35:49 GMT
+2015-10-24 10:35:49.302 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:35:49.302 1 Header = Pragma: no-cache
+2015-10-24 10:35:49.302 1 Header = Date: Sat, 24 Oct 2015 09:35:49 GMT
+2015-10-24 10:35:49.302 1 Header = Connection: keep-alive
+2015-10-24 10:35:49.302 1 Header = Set-Cookie: ZSession=eobXCBxh41R7GxA3j8DYSPCE92j6Klha4LCQQJtXoT8ssAAtxS2qSa9FZD2pPBqvA1UizbjCxJuVNOAjcUpdUPE5W0fHJYkko9ts2XZKfn1Akm4Dj-ZxxjVT1wPO3UpqyCiSuNv-w50eMu9Nv_ZydrhVP6ckCN9t9whCQpl0jgDcKfWMyyzrEsf2blkkgBmM19D4z6gmmEO7QWQArdhsplNzVQE0KG7GnfT7S8LeCuc0Wy9ZMJkv8bcFwF3-8Q3C; Path=/; Secure; HttpOnly
+2015-10-24 10:35:49.302 1 HTTP status = 200
+2015-10-24 10:35:49.302 1 HTTP reason = OK
+2015-10-24 10:35:49.302 1 HTTP version = HTTP/1.1
+2015-10-24 10:35:49.302 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-24 10:35:49.304 1 ***** PRE-API TRACE *****
+2015-10-24 10:35:49.304 1 HTTP method = GET
+2015-10-24 10:35:49.304 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069/summary
+2015-10-24 10:35:49.304 1 Query String = {}
+2015-10-24 10:35:49.305 1 Header = Accept: application/json
+2015-10-24 10:35:49.305 1 Header = follow_redirect: true
+2015-10-24 10:35:49.602 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:35:49.602 1 HTTP method = GET
+2015-10-24 10:35:49.602 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069/summary
+2015-10-24 10:35:49.602 1 Header = Server: Zuora App
+2015-10-24 10:35:49.602 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:35:49.602 1 Header = Content-Length: 1388
+2015-10-24 10:35:49.602 1 Header = Expires: Sat, 24 Oct 2015 09:35:49 GMT
+2015-10-24 10:35:49.602 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:35:49.602 1 Header = Pragma: no-cache
+2015-10-24 10:35:49.602 1 Header = Date: Sat, 24 Oct 2015 09:35:49 GMT
+2015-10-24 10:35:49.603 1 Header = Connection: keep-alive
+2015-10-24 10:35:49.603 1 Header = Set-Cookie: ZSession=lbImLYsZLId8XYavWlGXfArTl74xmnXQXHojLrNQkPUI_tvwBPB6hXlY6I4XPeH9gr3SG9E-6FxvfWmTeudBAh6rYfY7XHcIyuI5LRbk_tTNolvi1njT00xA1NQg1LZ-JaJ9QTZRmqc_YAYmoijrpCRxBwKEHdy2PkLeQjwXmqNOu54y-AWZcFGEQKVGko_b3kn2KlFH7qtv5FEhmJP8165HSoyfRdwBobcc00bmwQJ-V7sLj1dFFyf-34FuaOU5; Path=/; Secure; HttpOnly
+2015-10-24 10:35:49.603 1 HTTP status = 200
+2015-10-24 10:35:49.603 1 HTTP reason = OK
+2015-10-24 10:35:49.603 1 HTTP version = HTTP/1.1
+2015-10-24 10:35:49.603 1 API Response = {
+  "basicInfo": {
+    "NoDunning__c": null,
+    "accountNumber": "A00001069",
+    "balance": 0,
+    "batch": "Batch1",
+    "billCycleDay": 5,
+    "currency": "GBP",
+    "defaultPaymentMethod": null,
+    "id": "2c92c0f93c1deb6e013c296466fd3b25",
+    "lastInvoiceDate": null,
+    "lastPaymentAmount": null,
+    "lastPaymentDate": null,
+    "name": "Mawi Ltd",
+    "status": "Active"
+  },
+  "billToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "id": "2c92c0f83c1de760013c29646f3305e1",
+    "lastName": "O'Flaherty",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "invoices": [],
+  "payments": [],
+  "soldToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "id": "2c92c0f83c1de760013c29646f3305e1",
+    "lastName": "O'Flaherty",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "subscriptions": [],
+  "success": true,
+  "usage": []
+}
+2015-10-24 10:35:49.607 1 ***** PRE-API TRACE *****
+2015-10-24 10:35:49.607 1 HTTP method = GET
+2015-10-24 10:35:49.607 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069
+2015-10-24 10:35:49.607 1 Query String = {}
+2015-10-24 10:35:49.607 1 Header = Accept: application/json
+2015-10-24 10:35:49.607 1 Header = follow_redirect: true
+2015-10-24 10:35:49.849 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:35:49.849 1 HTTP method = GET
+2015-10-24 10:35:49.849 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069
+2015-10-24 10:35:49.850 1 Header = Server: Zuora App
+2015-10-24 10:35:49.850 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:35:49.850 1 Header = Content-Length: 1744
+2015-10-24 10:35:49.850 1 Header = Expires: Sat, 24 Oct 2015 09:35:49 GMT
+2015-10-24 10:35:49.850 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:35:49.850 1 Header = Pragma: no-cache
+2015-10-24 10:35:49.850 1 Header = Date: Sat, 24 Oct 2015 09:35:49 GMT
+2015-10-24 10:35:49.850 1 Header = Connection: keep-alive
+2015-10-24 10:35:49.850 1 Header = Set-Cookie: ZSession=AW7R8j11asHVbImrnT5ig7Iz6jSU1RnxxVgoRlD6dixuy-z1HuyOiA31R-ZNCrrlREKQ1N4WujY97BwhdZA0CaSg85uRXaWB3Sn9NipVuDje7qkf8-BEk_jXybVAYq1E452Lij40ETs-BmdeFr_FuGxDZvJZybXQ2vo-7urABu2Rkc1zM_GEg9d_seO4O-qBlVZNxpPBM9hEeYoVegBLFJGwMKaqQsUjQ6nfTK3k3R94sB0xMU67r1PoSQZmcFsP; Path=/; Secure; HttpOnly
+2015-10-24 10:35:49.850 1 HTTP status = 200
+2015-10-24 10:35:49.850 1 HTTP reason = OK
+2015-10-24 10:35:49.850 1 HTTP version = HTTP/1.1
+2015-10-24 10:35:49.850 1 API Response = {
+  "basicInfo": {
+    "NoDunning__c": null,
+    "accountNumber": "A00001069",
+    "batch": "Batch1",
+    "communicationProfileId": null,
+    "crmId": "001D000000rkZecIAE",
+    "id": "2c92c0f93c1deb6e013c296466fd3b25",
+    "invoiceTemplateId": "2c92c0f83b8dbf05013b8f8e374a2c96",
+    "name": "Mawi Ltd",
+    "notes": "Mawiltd",
+    "status": "Active"
+  },
+  "billToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "homePhone": "",
+    "lastName": "O'Flaherty",
+    "mobilePhone": "",
+    "nickname": "",
+    "otherPhone": "",
+    "otherPhoneType": null,
+    "personalEmail": "",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "billingAndPayment": {
+    "billCycleDay": 5,
+    "currency": "GBP",
+    "paymentGateway": null,
+    "paymentTerm": "Due Upon Receipt"
+  },
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "metrics": {
+    "balance": 0,
+    "contractedMrr": 0,
+    "creditBalance": 0,
+    "totalInvoiceBalance": 0
+  },
+  "soldToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "homePhone": "",
+    "lastName": "O'Flaherty",
+    "mobilePhone": "",
+    "nickname": "",
+    "otherPhone": "",
+    "otherPhoneType": null,
+    "personalEmail": "",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "success": true
+}
+2015-10-24 10:35:49.856 1 ***** PRE-API TRACE *****
+2015-10-24 10:35:49.856 1 HTTP method = POST
+2015-10-24 10:35:49.856 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts
+2015-10-24 10:35:49.856 1 Request Body = {
+  "ac_Willie__c": "ac_boy",
+  "ac_Winnie__c": "ac_Winnie",
+  "autoPay": true,
+  "billCycleDay": "15",
+  "billToContact": {
+  "address1": "address1",
+  "address2": "address2",
+  "city": "San Francisco",
+  "country": "USA",
+  "firstName": "John",
+  "lastName": "Doe",
+  "mobilePhone": "14156789012",
+  "state": "California",
+  "workEmail": "john.doe@zoura.com"
+},
+  "creditCard": {
+  "cardNumber": "4856200223544175",
+  "cardType": "Visa",
+  "expirationMonth": 2,
+  "expirationYear": 2014,
+  "securityCode": "111"
+},
+  "currency": "USD",
+  "name": "Soho",
+  "notes": "Soho Networks",
+  "paymentTerm": "Net 30",
+  "soldToContact": {
+  "address1": "address1",
+  "address2": "address2",
+  "city": "San Francisco",
+  "country": "USA",
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "mobilePhone": "14156789012",
+  "state": "California",
+  "workEmail": "jane.doe@zoura.com"
+}
+}
+2015-10-24 10:35:49.856 1 Header = Accept: application/json
+2015-10-24 10:35:49.856 1 Header = Content-Type: application/json
+2015-10-24 10:35:50.313 1 ***** POST-API RESPONSE TRACE *****
+2015-10-24 10:35:50.313 1 HTTP method = POST
+2015-10-24 10:35:50.314 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts
+2015-10-24 10:35:50.314 1 Header = Server: Zuora App
+2015-10-24 10:35:50.314 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-24 10:35:50.314 1 Header = Content-Length: 177
+2015-10-24 10:35:50.314 1 Header = Expires: Sat, 24 Oct 2015 09:35:50 GMT
+2015-10-24 10:35:50.314 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-24 10:35:50.314 1 Header = Pragma: no-cache
+2015-10-24 10:35:50.314 1 Header = Date: Sat, 24 Oct 2015 09:35:50 GMT
+2015-10-24 10:35:50.314 1 Header = Connection: keep-alive
+2015-10-24 10:35:50.314 1 Header = Set-Cookie: ZSession=3jEws4-s74Bq1wOZE-0ebjcslZ1eM8eE88CFTaBjadfVULBL8XRiA3g2IcrpavXS7A2fOnq4EJYJi2Eux0P-NCpCVhJlp6de8Rh96EpoBj3GVLqlm49uyZGknpLNnexfGjAn5qe0yDoOi2Y_gk3JHZlZUxnDe6OEseJnZ9llBxzrlCQi_gLR_M1DYey9nZnKRNM8WhN8lrbsHpCJRHMQSR7iD8fAV2QnK0iKM8zFseRJs3ojV4CafXtXt9G3QwDF; Path=/; Secure; HttpOnly
+2015-10-24 10:35:50.314 1 HTTP status = 200
+2015-10-24 10:35:50.314 1 HTTP reason = OK
+2015-10-24 10:35:50.314 1 HTTP version = HTTP/1.1
+2015-10-24 10:35:50.314 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "processId": "BE760ECC732A0047",
+  "reasons": [{
+    "code": 51001020,
+    "message": "Invalid custom fields: 'ac_Willie__c,ac_Winnie__c'."
+  }],
+  "success": false
+}
+2015-10-25 07:31:45.973 1 ***** SDK loggers initialized *****
+2015-10-25 07:31:45.997 1 ***** PRE-API TRACE *****
+2015-10-25 07:31:45.997 1 HTTP method = POST
+2015-10-25 07:31:45.997 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:31:45.998 1 Request Body = {}
+2015-10-25 07:31:45.998 1 Header = Accept: application/json
+2015-10-25 07:31:45.998 1 Header = Content-Type: application/json
+2015-10-25 07:31:45.998 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-25 07:31:45.998 1 Header = apiSecretAccessKey: Herbert01
+2015-10-25 07:31:46.211 1 HTTPClient Settings: org.apache.http.impl.client.HttpClientBuilder@7f3a4a2f
+2015-10-25 07:32:00.775 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:00.776 1 HTTP method = POST
+2015-10-25 07:32:00.776 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:00.776 1 Header = Server: Zuora App
+2015-10-25 07:32:00.776 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:00.776 1 Header = Content-Length: 22
+2015-10-25 07:32:00.776 1 Header = Expires: Sun, 25 Oct 2015 07:32:00 GMT
+2015-10-25 07:32:00.776 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:00.776 1 Header = Pragma: no-cache
+2015-10-25 07:32:00.776 1 Header = Date: Sun, 25 Oct 2015 07:32:00 GMT
+2015-10-25 07:32:00.776 1 Header = Connection: keep-alive
+2015-10-25 07:32:00.776 1 Header = Set-Cookie: ZSession=-pll5e7NZ6027Xrny-5XAPvCUF6AnNzv49KfGpHC7XLZz50LgFF3xgWkXSmo1JVq1NImI6sFsEtKW3yPTn82Nmjb5RvTpCuxznSxbrPdhLA-AAN5y5Wibdsza78ar58vpx4efmLwZ_AxGu-9PrOomrarIFOkq6bHw9mPEVVSaECrbhs5m1K8K2ikn63bDT_RzOLHq0e82NwxVOX8WPN1n2uH3OkYg_JMRAk5pr8NGcsKKYPY2cg9x4trS2nD8D7t; Path=/; Secure; HttpOnly
+2015-10-25 07:32:00.776 1 HTTP status = 200
+2015-10-25 07:32:00.776 1 HTTP reason = OK
+2015-10-25 07:32:00.776 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:00.776 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-25 07:32:00.778 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:00.778 1 HTTP method = GET
+2015-10-25 07:32:00.778 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069/summary
+2015-10-25 07:32:00.778 1 Query String = {}
+2015-10-25 07:32:00.778 1 Header = Accept: application/json
+2015-10-25 07:32:00.779 1 Header = follow_redirect: true
+2015-10-25 07:32:02.745 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:02.745 1 HTTP method = GET
+2015-10-25 07:32:02.745 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069/summary
+2015-10-25 07:32:02.745 1 Header = Server: Zuora App
+2015-10-25 07:32:02.745 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:02.745 1 Header = Content-Length: 1388
+2015-10-25 07:32:02.745 1 Header = Expires: Sun, 25 Oct 2015 07:32:02 GMT
+2015-10-25 07:32:02.745 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:02.745 1 Header = Pragma: no-cache
+2015-10-25 07:32:02.745 1 Header = Date: Sun, 25 Oct 2015 07:32:02 GMT
+2015-10-25 07:32:02.745 1 Header = Connection: keep-alive
+2015-10-25 07:32:02.745 1 Header = Set-Cookie: ZSession=ruIBQ4D0cqH2-CkYsyAWQIJLYTnx5BEH5w0pMwHe9Zv8l27W_k4QB255CLWeyKow0w-DfJkinmO5tno_LxX6LFg909W2xLVlD6aSD0d5bFtc0D9hkQIWWjUscbsxx-nt37Z24ba-lph5JbDalBd_S2POc29R6OQxRReLIV-FmBJeFCiELkJCjhBVRllPOidt1m4F-E7m4e0Ma6dUusmUO1iTHvIHzT_r87BKJAW7mH5DpjeV618b8RxFyTpjOOMj; Path=/; Secure; HttpOnly
+2015-10-25 07:32:02.745 1 HTTP status = 200
+2015-10-25 07:32:02.745 1 HTTP reason = OK
+2015-10-25 07:32:02.746 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:02.746 1 API Response = {
+  "basicInfo": {
+    "NoDunning__c": null,
+    "accountNumber": "A00001069",
+    "balance": 0,
+    "batch": "Batch1",
+    "billCycleDay": 5,
+    "currency": "GBP",
+    "defaultPaymentMethod": null,
+    "id": "2c92c0f93c1deb6e013c296466fd3b25",
+    "lastInvoiceDate": null,
+    "lastPaymentAmount": null,
+    "lastPaymentDate": null,
+    "name": "Mawi Ltd",
+    "status": "Active"
+  },
+  "billToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "id": "2c92c0f83c1de760013c29646f3305e1",
+    "lastName": "O'Flaherty",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "invoices": [],
+  "payments": [],
+  "soldToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "id": "2c92c0f83c1de760013c29646f3305e1",
+    "lastName": "O'Flaherty",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "subscriptions": [],
+  "success": true,
+  "usage": []
+}
+2015-10-25 07:32:02.748 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:02.748 1 HTTP method = GET
+2015-10-25 07:32:02.748 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069
+2015-10-25 07:32:02.748 1 Query String = {}
+2015-10-25 07:32:02.748 1 Header = Accept: application/json
+2015-10-25 07:32:02.748 1 Header = follow_redirect: true
+2015-10-25 07:32:03.041 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:03.041 1 HTTP method = GET
+2015-10-25 07:32:03.041 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts/A00001069
+2015-10-25 07:32:03.041 1 Header = Server: Zuora App
+2015-10-25 07:32:03.041 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:03.041 1 Header = Content-Length: 1744
+2015-10-25 07:32:03.041 1 Header = Expires: Sun, 25 Oct 2015 07:32:02 GMT
+2015-10-25 07:32:03.041 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:03.041 1 Header = Pragma: no-cache
+2015-10-25 07:32:03.041 1 Header = Date: Sun, 25 Oct 2015 07:32:02 GMT
+2015-10-25 07:32:03.041 1 Header = Connection: keep-alive
+2015-10-25 07:32:03.041 1 Header = Set-Cookie: ZSession=NOpfpeapFpCG3clHnovVlbsou98Ms5pXaAzW87DPMk7UnVouSQ13oFxERVxkVCmPPZU5B7S0c7Koet5JE5OcrwSh8gR6oy-xN6L9Wird_12HP_cz0x2-8AhfCWDT0yFgGZJ4e6pz4hs_lymuJRpfDsfE4_0psGxV7M0wey0P35XAzE_3bo0zpGahKwTvrrOwns3F3Z6FZIqOHnxh9k0U2Tkkztn-y8DAd55yYmCr_qi2kj-tFki_qViKuUNkKT1T; Path=/; Secure; HttpOnly
+2015-10-25 07:32:03.041 1 HTTP status = 200
+2015-10-25 07:32:03.041 1 HTTP reason = OK
+2015-10-25 07:32:03.041 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:03.041 1 API Response = {
+  "basicInfo": {
+    "NoDunning__c": null,
+    "accountNumber": "A00001069",
+    "batch": "Batch1",
+    "communicationProfileId": null,
+    "crmId": "001D000000rkZecIAE",
+    "id": "2c92c0f93c1deb6e013c296466fd3b25",
+    "invoiceTemplateId": "2c92c0f83b8dbf05013b8f8e374a2c96",
+    "name": "Mawi Ltd",
+    "notes": "Mawiltd",
+    "status": "Active"
+  },
+  "billToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "homePhone": "",
+    "lastName": "O'Flaherty",
+    "mobilePhone": "",
+    "nickname": "",
+    "otherPhone": "",
+    "otherPhoneType": null,
+    "personalEmail": "",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "billingAndPayment": {
+    "billCycleDay": 5,
+    "currency": "GBP",
+    "paymentGateway": null,
+    "paymentTerm": "Due Upon Receipt"
+  },
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "metrics": {
+    "balance": 0,
+    "contractedMrr": 0,
+    "creditBalance": 0,
+    "totalInvoiceBalance": 0
+  },
+  "soldToContact": {
+    "address1": "2 Nimrod Passage,",
+    "address2": "2 Nimrod Passage,",
+    "city": "London",
+    "country": "United Kingdom",
+    "county": "",
+    "fax": "",
+    "firstName": "Sian",
+    "homePhone": "",
+    "lastName": "O'Flaherty",
+    "mobilePhone": "",
+    "nickname": "",
+    "otherPhone": "",
+    "otherPhoneType": null,
+    "personalEmail": "",
+    "state": "",
+    "taxRegion": "",
+    "workEmail": "marketing@mawi.co.uk",
+    "workPhone": "020 7923 1414",
+    "zipCode": "N1 4BU"
+  },
+  "success": true
+}
+2015-10-25 07:32:03.043 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:03.043 1 HTTP method = POST
+2015-10-25 07:32:03.043 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts
+2015-10-25 07:32:03.043 1 Request Body = {
+  "ac_Willie__c": "ac_boy",
+  "ac_Winnie__c": "ac_Winnie",
+  "autoPay": true,
+  "billCycleDay": "15",
+  "billToContact": {
+  "address1": "address1",
+  "address2": "address2",
+  "city": "San Francisco",
+  "country": "USA",
+  "firstName": "John",
+  "lastName": "Doe",
+  "mobilePhone": "14156789012",
+  "state": "California",
+  "workEmail": "john.doe@zoura.com"
+},
+  "creditCard": {
+  "cardNumber": "4856200223544175",
+  "cardType": "Visa",
+  "expirationMonth": 2,
+  "expirationYear": 2014,
+  "securityCode": "111"
+},
+  "currency": "USD",
+  "name": "Soho",
+  "notes": "Soho Networks",
+  "paymentTerm": "Net 30",
+  "soldToContact": {
+  "address1": "address1",
+  "address2": "address2",
+  "city": "San Francisco",
+  "country": "USA",
+  "firstName": "Jane",
+  "lastName": "Doe",
+  "mobilePhone": "14156789012",
+  "state": "California",
+  "workEmail": "jane.doe@zoura.com"
+}
+}
+2015-10-25 07:32:03.044 1 Header = Accept: application/json
+2015-10-25 07:32:03.044 1 Header = Content-Type: application/json
+2015-10-25 07:32:03.562 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:03.562 1 HTTP method = POST
+2015-10-25 07:32:03.562 1 URL = https://apisandbox-api.zuora.com/rest/v1/accounts
+2015-10-25 07:32:03.562 1 Header = Server: Zuora App
+2015-10-25 07:32:03.563 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:03.563 1 Header = Content-Length: 177
+2015-10-25 07:32:03.563 1 Header = Expires: Sun, 25 Oct 2015 07:32:03 GMT
+2015-10-25 07:32:03.563 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:03.563 1 Header = Pragma: no-cache
+2015-10-25 07:32:03.563 1 Header = Date: Sun, 25 Oct 2015 07:32:03 GMT
+2015-10-25 07:32:03.563 1 Header = Connection: keep-alive
+2015-10-25 07:32:03.563 1 Header = Set-Cookie: ZSession=hwsmjK3G25E9PH1jFZo60aNAD5pW8V0eC94K_ahMbRC19I0beRntgjlNzzjRWfrHbn068YjqV4AExiEYAeNZhju7tcYPheq9gzFwePkL3zkuzMjFSDva9qZ7qhPHdko6q243V8kIqrjueTiiuxMaiVSI1unVwUSqkbRNnF6W7J40GoyDGrIxTxtXV2ci4VffA8i1B7itFovs1aF-aAWKKFBvBdBOLjwMB7GW3l7u3Krlf3-MmqhwSdL5Hx5GqTGx; Path=/; Secure; HttpOnly
+2015-10-25 07:32:03.563 1 HTTP status = 200
+2015-10-25 07:32:03.563 1 HTTP reason = OK
+2015-10-25 07:32:03.563 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:03.563 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "processId": "3AC5724CEBC6CE08",
+  "reasons": [{
+    "code": 51001020,
+    "message": "Invalid custom fields: 'ac_Willie__c,ac_Winnie__c'."
+  }],
+  "success": false
+}
+2015-10-25 07:32:03.565 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:03.565 1 HTTP method = POST
+2015-10-25 07:32:03.566 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:03.566 1 Request Body = {}
+2015-10-25 07:32:03.566 1 Header = Accept: application/json
+2015-10-25 07:32:03.566 1 Header = Content-Type: application/json
+2015-10-25 07:32:03.566 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-25 07:32:03.566 1 Header = apiSecretAccessKey: Herbert01
+2015-10-25 07:32:03.868 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:03.868 1 HTTP method = POST
+2015-10-25 07:32:03.868 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:03.868 1 Header = Server: Zuora App
+2015-10-25 07:32:03.868 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:03.868 1 Header = Content-Length: 22
+2015-10-25 07:32:03.868 1 Header = Expires: Sun, 25 Oct 2015 07:32:03 GMT
+2015-10-25 07:32:03.868 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:03.868 1 Header = Pragma: no-cache
+2015-10-25 07:32:03.868 1 Header = Date: Sun, 25 Oct 2015 07:32:03 GMT
+2015-10-25 07:32:03.868 1 Header = Connection: keep-alive
+2015-10-25 07:32:03.868 1 Header = Set-Cookie: ZSession=Wm3GCWEQLFJJ_Ne3EadFwDezmULz2Uw_dLhQdAzbPkeV9xmILXqq1UzvOUZ7eWP1QJNEOAgYokL2_qFuY6UQRFMb9U9juFd4T2V0aHV2RrTrEidskpwXD6NfLYyTeac-AISCXhoCMCGQNpzapk1mjX0_IBCoTfxAQpMP6PfbLIyUl7UiAsBZA3uoUJuGjUoOmyUiDPcVmfT_Ig3OlhDHXtSQ6TF_U2oZ9ZfdHZNBJ1uV-_jMcCh0HC2L1cc0OuaI; Path=/; Secure; HttpOnly
+2015-10-25 07:32:03.868 1 HTTP status = 200
+2015-10-25 07:32:03.868 1 HTTP reason = OK
+2015-10-25 07:32:03.868 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:03.868 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-25 07:32:03.869 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:03.869 1 HTTP method = GET
+2015-10-25 07:32:03.869 1 URL = https://apisandbox-api.zuora.com/rest/v1/catalog/products
+2015-10-25 07:32:03.869 1 Query String = {pageSize=10}
+2015-10-25 07:32:03.869 1 Header = Accept: application/json
+2015-10-25 07:32:03.869 1 Header = follow_redirect: true
+2015-10-25 07:32:08.414 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:08.414 1 HTTP method = GET
+2015-10-25 07:32:08.414 1 URL = https://apisandbox-api.zuora.com/rest/v1/catalog/products?pageSize=10
+2015-10-25 07:32:08.414 1 Header = Server: Zuora App
+2015-10-25 07:32:08.414 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:08.414 1 Header = Content-Length: 12946
+2015-10-25 07:32:08.414 1 Header = Expires: Sun, 25 Oct 2015 07:32:08 GMT
+2015-10-25 07:32:08.414 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:08.414 1 Header = Pragma: no-cache
+2015-10-25 07:32:08.414 1 Header = Date: Sun, 25 Oct 2015 07:32:08 GMT
+2015-10-25 07:32:08.414 1 Header = Connection: keep-alive
+2015-10-25 07:32:08.414 1 Header = Set-Cookie: ZSession=uudetJyvfVAsDkEFIC-A36X69csuZ2nhDnmdU-g_vfEJ--NY3AogSbE-5kYSZCkKaCnRNxUldTz7HhyRskh9-rRjz8spebn9eCLEGM3kPhoWD4WgCaDdeK5N5rd2blit8nVHtJW9tU2rymmr2EEpIGIY-umSC4QX9rd_jcGCTsI-qOi4FWDafnAB0zlVQhh9iYFGLYqUM1nKlWC5PO814Jb6qOPa0SwzaSkX6VWUc4fEnwOeLPOETkzbAMpaN41e; Path=/; Secure; HttpOnly
+2015-10-25 07:32:08.414 1 HTTP status = 200
+2015-10-25 07:32:08.414 1 HTTP reason = OK
+2015-10-25 07:32:08.415 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:08.415 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "nextPage": "https://apisandbox-api.zuora.com/rest/v1/catalog/products?page=2&pageSize=10",
+  "products": [
+    {
+      "BrightPearlCategory__c": "Base Products",
+      "description": "",
+      "id": "2c92c0f84d94c548014d99685458318c",
+      "name": "Test product",
+      "productRatePlans": [{
+        "description": "Test rate plan for service activation",
+        "effectiveEndDate": "2015-12-31",
+        "effectiveStartDate": "2015-05-28",
+        "id": "2c92c0f84d94c546014d9968f06e1d7e",
+        "name": "Test rate plan",
+        "productRatePlanCharges": [{
+          "billingDay": "ChargeTriggerDay",
+          "billingPeriod": "Annual",
+          "id": "2c92c0f84d94c548014d996a799039d7",
+          "model": "FlatFee",
+          "name": "Test service activation",
+          "pricingSummary": ["GBP500"],
+          "taxCode": "VAT Rates",
+          "taxMode": "TaxExclusive",
+          "taxable": true,
+          "type": "Recurring"
+        }],
+        "status": "Active"
+      }],
+      "sku": "SKU-00000020"
+    },
+    {
+      "BrightPearlCategory__c": "Base Products",
+      "description": "",
+      "id": "2c92c0f94c510a01014c55f08ea85910",
+      "name": "Test App Store Product",
+      "productRatePlans": [{
+        "description": "",
+        "effectiveEndDate": "2020-03-31",
+        "effectiveStartDate": "2015-03-01",
+        "id": "2c92c0f94c510a0d014c55f143ee17cb",
+        "name": "Campaign",
+        "productRatePlanCharges": [
+          {
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Month",
+            "id": "2c92c0f94c510a01014c55f641f57f84",
+            "model": "DiscountPercentage",
+            "name": "Discount",
+            "pricingSummary": ["100%  discount"],
+            "taxCode": null,
+            "taxMode": "TaxExclusive",
+            "taxable": false,
+            "type": "Recurring"
+          },
+          {
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Month",
+            "id": "2c92c0f84c510081014c55f33f5d5fe2",
+            "model": "FlatFee",
+            "name": "Charge",
+            "pricingSummary": ["GBP100"],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }
+        ],
+        "status": "Active"
+      }],
+      "sku": "SKU-00000019"
+    },
+    {
+      "BrightPearlCategory__c": "Add On Services",
+      "description": "",
+      "id": "2c92c0f93cb7f946013cbacd4673140d",
+      "name": "One Day Consultancy",
+      "productRatePlans": [
+        {
+          "description": "",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2013-04-01",
+          "id": "2c92c0f93e166759013e1dff34a933bb",
+          "name": "Accelerator Day",
+          "productRatePlanCharges": [{
+            "billingDay": null,
+            "billingPeriod": null,
+            "id": "2c92c0f83e166125013e1e0050ec7572",
+            "model": "PerUnit",
+            "name": "Consultancy Day",
+            "pricingSummary": ["GBP650/Each"],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "OneTime"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "One Day Consultancy",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2000-01-01",
+          "id": "2c92c0f93cb7f946013cbace292215d0",
+          "name": "One Day Consultancy",
+          "productRatePlanCharges": [{
+            "billingDay": null,
+            "billingPeriod": null,
+            "id": "2c92c0f83cb7f454013cbadafcbe5f9b",
+            "model": "FlatFee",
+            "name": "One Day Consultancy",
+            "pricingSummary": [
+              "USD999",
+              "GBP650"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "OneTime"
+          }],
+          "status": "Active"
+        }
+      ],
+      "sku": "SKU-00000016"
+    },
+    {
+      "BrightPearlCategory__c": "Miscellaneous Products",
+      "description": "",
+      "id": "2c92c0f83b8dbf05013b8f95d1a173f6",
+      "name": "Test product",
+      "productRatePlans": [{
+        "description": "",
+        "effectiveEndDate": "2020-12-31",
+        "effectiveStartDate": "2012-12-01",
+        "id": "2c92c0f93b8dbf09013b8f962bc26ac9",
+        "name": "New Rate Plan",
+        "productRatePlanCharges": [{
+          "billingDay": "SubscriptionStartDay",
+          "billingPeriod": "Annual",
+          "id": "2c92c0f940e762ee0140ea7397dc4ce9",
+          "model": "FlatFee",
+          "name": "New Component",
+          "pricingSummary": ["GBP100"],
+          "taxCode": "",
+          "taxMode": "TaxExclusive",
+          "taxable": false,
+          "type": "Recurring"
+        }],
+        "status": "Active"
+      }],
+      "sku": "SKU-00000013"
+    },
+    {
+      "BrightPearlCategory__c": "Add On Services",
+      "description": "Gold Support",
+      "id": "2c92c0f93b02ae8f013b3dddbed403d4",
+      "name": "Gold Support",
+      "productRatePlans": [
+        {
+          "description": "Service Plan",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b02ae8f013b3dddbf1803dc",
+          "name": "Gold Support - Quarterly Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f93b6ed476013b752a059d7324",
+            "model": "PerUnit",
+            "name": "Annual Subscription with Quarterly Payment",
+            "pricingSummary": [
+              "USD90/Per Quarter",
+              "GBP60/Per Quarter"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "EPOS User - Annual Billing",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b02ae8f013b3dddbee503d6",
+          "name": "Gold Support  - Annual Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Annual",
+            "id": "2c92c0f83b6eceb5013b752b6a502fbc",
+            "model": "PerUnit",
+            "name": "Annual Subscription with Annual Billing/Payment",
+            "pricingSummary": [
+              "USD360/Per Annum",
+              "GBP240/Per Annum"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        }
+      ],
+      "sku": "SKU-00000010"
+    },
+    {
+      "BrightPearlCategory__c": "Base Products",
+      "description": "Brightpearl Retail/Wholesale Subscription Plan",
+      "id": "2c92c0f83b02a9dc013b3ca02c793e46",
+      "name": "Retail/Wholesale User",
+      "productRatePlans": [
+        {
+          "description": "Retail Plan",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f83b02a9dc013b3caa03955d48",
+          "name": "Retail  - Annual Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Annual",
+            "id": "2c92c0f83b6eceb5013b75107d2d437f",
+            "model": "PerUnit",
+            "name": "Annual Subscription with Annual Billing/Payment",
+            "pricingSummary": [
+              "USD1188/Per Annum",
+              "GBP828/Per Annum"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "Retail Plan",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b02ae8f013b3ca310ed4911",
+          "name": "Retail  - Quarterly Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f83b6eceb5013b70e6f777585c",
+            "model": "PerUnit",
+            "name": "Annual Subscription with Quarterly Payment",
+            "pricingSummary": [
+              "USD297/User",
+              "GBP207/User"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        }
+      ],
+      "sku": "SKU-00000004"
+    },
+    {
+      "BrightPearlCategory__c": "Base Products",
+      "description": "Brightpearl Monthly Subscription",
+      "id": "2c92c0f93c1deb6e013c29f53e7a26ec",
+      "name": "Brightpearl Monthly Subscription",
+      "productRatePlans": [{
+        "description": "",
+        "effectiveEndDate": "2037-12-31",
+        "effectiveStartDate": "2013-01-01",
+        "id": "2c92c0f93c1deb6e013c29f615652ae5",
+        "name": "Brightpearl Monthly Subscription",
+        "productRatePlanCharges": [{
+          "billingDay": "SubscriptionStartDay",
+          "billingPeriod": "Month",
+          "id": "2c92c0f83c1de760013c29f9223e0710",
+          "model": "FlatFee",
+          "name": "Brightpearl Monthly Subscription",
+          "pricingSummary": [
+            "USD0",
+            "GBP0"
+          ],
+          "taxCode": "VAT Rates",
+          "taxMode": "TaxExclusive",
+          "taxable": true,
+          "type": "Recurring"
+        }],
+        "status": "Active"
+      }],
+      "sku": "SKU-00000015"
+    },
+    {
+      "BrightPearlCategory__c": "Base Products",
+      "description": "Ecommerce/Multi-Channel",
+      "id": "2c92c0f93b6ed476013b8a2212ea2d5c",
+      "name": "Ecommerce/Multi-Channel",
+      "productRatePlans": [
+        {
+          "description": "Annual Subscription Quarterly Billing",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-12-01",
+          "id": "2c92c0f83b6eceb5013b8a28e3253fe2",
+          "name": "Annual Subscription Annual Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f83b6eceb5013b8a28e3323fe4",
+            "model": "FlatFee",
+            "name": "Annual Charge",
+            "pricingSummary": [
+              "USD1440",
+              "GBP948"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "Annual Subscription Quarterly Billing",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-12-01",
+          "id": "2c92c0f83b6eceb5013b8a22bced252e",
+          "name": "Annual Subscription Quarterly Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f93b6ed476013b8a2898035252",
+            "model": "FlatFee",
+            "name": "Quarterly Charge",
+            "pricingSummary": [
+              "USD297",
+              "GBP237"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        }
+      ],
+      "sku": "SKU-00000012"
+    },
+    {
+      "BrightPearlCategory__c": null,
+      "description": "",
+      "id": "2c92c0f83cf64298013d172dc1881b45",
+      "name": "Credit Rewards",
+      "productRatePlans": [{
+        "description": "",
+        "effectiveEndDate": "2099-12-31",
+        "effectiveStartDate": "2013-01-01",
+        "id": "2c92c0f93cf64d94013d172e1d456a9d",
+        "name": "Customer loyalty",
+        "productRatePlanCharges": [{
+          "billingDay": null,
+          "billingPeriod": null,
+          "id": "2c92c0f93cf64d94013d172eab866ae9",
+          "model": "FlatFee",
+          "name": "Credit ",
+          "pricingSummary": ["GBP0"],
+          "taxCode": "VAT Rates",
+          "taxMode": "TaxExclusive",
+          "taxable": true,
+          "type": "OneTime"
+        }],
+        "status": "Active"
+      }],
+      "sku": "SKU-00000017"
+    },
+    {
+      "BrightPearlCategory__c": null,
+      "description": "",
+      "id": "2c92c0f83b8dbf05013b9018f1073bc5",
+      "name": "Discount",
+      "productRatePlans": [
+        {
+          "description": "Introductory first year discount",
+          "effectiveEndDate": "2015-12-31",
+          "effectiveStartDate": "2015-06-23",
+          "id": "2c92c0f94e088947014e208b21943a05",
+          "name": "Introductory first year discount",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f84e089461014e208d20e20585",
+            "model": "FlatFee",
+            "name": "Intro Discount - Quarterly",
+            "pricingSummary": ["GBP-100"],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "",
+          "effectiveEndDate": "2099-12-01",
+          "effectiveStartDate": "2000-12-01",
+          "id": "2c92c0f93b8dbf09013b9019548e397e",
+          "name": "Fixed Discount",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f83b8dbf05013b901a2271481d",
+            "model": "DiscountPercentage",
+            "name": "Discount",
+            "pricingSummary": ["25%  discount"],
+            "taxCode": null,
+            "taxMode": "TaxExclusive",
+            "taxable": false,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        }
+      ],
+      "sku": "SKU-00000014"
+    }
+  ],
+  "success": true
+}
+2015-10-25 07:32:08.421 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:08.421 1 HTTP method = GET
+2015-10-25 07:32:08.421 1 URL = https://apisandbox-api.zuora.com/rest/v1/catalog/products?page=2&pageSize=10
+2015-10-25 07:32:08.421 1 Query String = {}
+2015-10-25 07:32:08.421 1 Header = Accept: application/json
+2015-10-25 07:32:08.421 1 Header = follow_redirect: true
+2015-10-25 07:32:09.498 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:09.498 1 HTTP method = GET
+2015-10-25 07:32:09.498 1 URL = https://apisandbox-api.zuora.com/rest/v1/catalog/products?page=2&pageSize=10
+2015-10-25 07:32:09.498 1 Header = Server: Zuora App
+2015-10-25 07:32:09.498 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:09.498 1 Header = Expires: Sun, 25 Oct 2015 07:32:09 GMT
+2015-10-25 07:32:09.498 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:09.498 1 Header = Pragma: no-cache
+2015-10-25 07:32:09.498 1 Header = Date: Sun, 25 Oct 2015 07:32:09 GMT
+2015-10-25 07:32:09.498 1 Header = Content-Length: 10322
+2015-10-25 07:32:09.498 1 Header = Connection: keep-alive
+2015-10-25 07:32:09.498 1 Header = Set-Cookie: ZSession=5fE1f7btwZHvb4BagT0dmlGvDK5DDuZa088iSLYw39czKdBoB7Pi5BSejqCQvaPDULm_F7hhXWqdU1EM53_dPcafRx1zOhpqbtH-hnljtAHsKGyZX1yeFvBY9-ZieGWYvZ-SC6GNoau2FV2W5305m4aeBkPnt5Z93-R5tQ2Nm4YnwifOf7oTP6BmbvLPvs_mSSSqpv2VLwybJXVZav6U38OSz5L-PG-7LsQZO7Gr0r8UtSew8Zvav0w626Ep2EEE; Path=/; Secure; HttpOnly
+2015-10-25 07:32:09.498 1 HTTP status = 200
+2015-10-25 07:32:09.498 1 HTTP reason = OK
+2015-10-25 07:32:09.498 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:09.498 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "products": [
+    {
+      "BrightPearlCategory__c": null,
+      "description": "Brightpearl Service Subscription Plan",
+      "id": "2c92c0f93b02ae8f013b3db3e6f21b50",
+      "name": "Service User with Gold support",
+      "productRatePlans": [
+        {
+          "description": "Service Plan with Gold Support",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b02ae8f013b3db3e7391b68",
+          "name": "Service  with Gold Support - Quarterly Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f93b6ed476013b751e829149e6",
+            "model": "PerUnit",
+            "name": "Annual Subscription with Quarterly Payment",
+            "pricingSummary": [
+              "USD267/Per Quarter",
+              "GBP177/Per Quarter"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "Service Plan with Gold Support",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b02ae8f013b3db3e7041b5b",
+          "name": "Service with Gold Support- Annual Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Annual",
+            "id": "2c92c0f83b6eceb5013b75202fe07fbc",
+            "model": "PerUnit",
+            "name": "Annual Subscription with Annual Payment",
+            "pricingSummary": [
+              "USD1068/Per Quarter",
+              "GBP708/Per Quarter"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        }
+      ],
+      "sku": "SKU-00000007"
+    },
+    {
+      "BrightPearlCategory__c": null,
+      "description": "Brightpearl Retail Subscription Plan with Gold Support",
+      "id": "2c92c0f93b02ae8f013b3da0b2846f2a",
+      "name": "Retail/Wholesale User with Gold Support",
+      "productRatePlans": [
+        {
+          "description": "Retail Plan",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b02ae8f013b3da0b2956f2c",
+          "name": "Retail  - Annual Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Annual",
+            "id": "2c92c0f83b6eceb5013b75265fa91997",
+            "model": "PerUnit",
+            "name": "Annual Subscription with Annual Payment",
+            "pricingSummary": [
+              "USD1548/Per Annum",
+              "GBP1068/Per Annum"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "Retail Plan",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b02ae8f013b3da0b2cd6f32",
+          "name": "Retail  - Quarterly Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f93b6ed476013b7525490b653d",
+            "model": "PerUnit",
+            "name": "Annual Subscription with Quarterly Payment",
+            "pricingSummary": [
+              "USD387/Per Quarter",
+              "GBP267/Per Quarter"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        }
+      ],
+      "sku": "SKU-00000005"
+    },
+    {
+      "BrightPearlCategory__c": null,
+      "description": "Brightpearl Servicel Subscription Plan",
+      "id": "2c92c0f83b02a9dc013b3daaba03311e",
+      "name": "Service User",
+      "productRatePlans": [
+        {
+          "description": "Service Plan",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f83b02a9dc013b3daaba553126",
+          "name": "Service  - Quarterly Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f83b6eceb5013b751a74f66a26",
+            "model": "PerUnit",
+            "name": "Annual Subscription with Quarterly Payment",
+            "pricingSummary": [
+              "USD177/Per Quarter",
+              "GBP117/Per Quarter"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "Service Plan",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f83b02a9dc013b3daaba1c3120",
+          "name": "Service  - Annual Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Annual",
+            "id": "2c92c0f93b6ed476013b751c87274295",
+            "model": "PerUnit",
+            "name": "Annual Subscription with Quarterly Payment",
+            "pricingSummary": [
+              "USD708/Per Annum",
+              "GBP468/Per Annum"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        }
+      ],
+      "sku": "SKU-00000006"
+    },
+    {
+      "BrightPearlCategory__c": null,
+      "description": "Brightpearl EPOS User(s)",
+      "id": "2c92c0f93b02ae8f013b3dd941bd73f1",
+      "name": "EPOS User(s)",
+      "productRatePlans": [
+        {
+          "description": "EPOS User - Annual Billing",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b02ae8f013b3dd941d373f3",
+          "name": "EPOS User  - Annual Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Annual",
+            "id": "2c92c0f93b02ae8f013b3dd941e673f5",
+            "model": "FlatFee",
+            "name": "Annual Subscription with Annual Billing/Payment",
+            "pricingSummary": [
+              "USD600",
+              "GBP348"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "Service Plan",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b02ae8f013b3dd9421273f9",
+          "name": "Service  - Quarterly Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f93b02ae8f013b3dd9421f73fb",
+            "model": "FlatFee",
+            "name": "Annual Subscription with Quarterly Payment",
+            "pricingSummary": [
+              "USD150",
+              "GBP87"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        }
+      ],
+      "sku": "SKU-00000009"
+    },
+    {
+      "BrightPearlCategory__c": null,
+      "description": "Gross Merchandised Value Fees",
+      "id": "2c92c0f93b02ae8f013b3de0d11309c8",
+      "name": "Gross Merchandised Value Fees",
+      "productRatePlans": [
+        {
+          "description": "Gross Merchandised Value Fees to £2,250 T/O per month - Quarterly Billing",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b407e3b013b47321bb330db",
+          "name": "Gross Merchandised Value Fees to £2,250 T/O per month- Quarterly Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f93b407e3b013b47321bc030e0",
+            "model": "FlatFee",
+            "name": "Annual Subscription with Quarterly Payment",
+            "pricingSummary": [
+              "USD387",
+              "GBP297"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "Gross Merchandised Value Fees to £20,250 T/O per month - Annual Billing",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f83b407572013b472f11065bbd",
+          "name": "Gross Merchandised Value Fees to £2,250 T/O  per month- Annual Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Annual",
+            "id": "2c92c0f83b407572013b472f11135bbf",
+            "model": "FlatFee",
+            "name": "Annual Subscription with Annual Billing/Payment",
+            "pricingSummary": [
+              "USD1548",
+              "GBP1188"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "Gross Merchandised Value Fees to £10,100 T/O - Annual Billing",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b02ae8f013b3de0d12509ca",
+          "name": "Gross Merchandised Value Fees to £10,100 T/O  - Annual Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Annual",
+            "id": "2c92c0f93b02ae8f013b3de0d13309cc",
+            "model": "FlatFee",
+            "name": "Annual Subscription with Annual Billing/Payment",
+            "pricingSummary": [
+              "USD1440",
+              "GBP948"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        },
+        {
+          "description": "Gross Merchandised Value Fees to  £10,100 T/O - Quarterly Billing",
+          "effectiveEndDate": "2020-12-31",
+          "effectiveStartDate": "2012-01-01",
+          "id": "2c92c0f93b02ae8f013b3de0d15209d0",
+          "name": "Gross Merchandised Value Fees to  £10,100 T/O - Quarterly Billing",
+          "productRatePlanCharges": [{
+            "billingDay": "SubscriptionStartDay",
+            "billingPeriod": "Quarter",
+            "id": "2c92c0f93b02ae8f013b3de0d15c09d2",
+            "model": "FlatFee",
+            "name": "Annual Subscription with Quarterly Payment",
+            "pricingSummary": [
+              "USD300",
+              "GBP237"
+            ],
+            "taxCode": "VAT Rates",
+            "taxMode": "TaxExclusive",
+            "taxable": true,
+            "type": "Recurring"
+          }],
+          "status": "Active"
+        }
+      ],
+      "sku": "SKU-00000011"
+    }
+  ],
+  "success": true
+}
+2015-10-25 07:32:09.502 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:09.503 1 HTTP method = POST
+2015-10-25 07:32:09.503 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:09.503 1 Request Body = {}
+2015-10-25 07:32:09.503 1 Header = Accept: application/json
+2015-10-25 07:32:09.503 1 Header = Content-Type: application/json
+2015-10-25 07:32:09.503 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-25 07:32:09.503 1 Header = apiSecretAccessKey: Herbert01
+2015-10-25 07:32:09.808 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:09.808 1 HTTP method = POST
+2015-10-25 07:32:09.808 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:09.808 1 Header = Server: Zuora App
+2015-10-25 07:32:09.808 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:09.808 1 Header = Content-Length: 22
+2015-10-25 07:32:09.808 1 Header = Expires: Sun, 25 Oct 2015 07:32:09 GMT
+2015-10-25 07:32:09.808 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:09.808 1 Header = Pragma: no-cache
+2015-10-25 07:32:09.808 1 Header = Date: Sun, 25 Oct 2015 07:32:09 GMT
+2015-10-25 07:32:09.808 1 Header = Connection: keep-alive
+2015-10-25 07:32:09.808 1 Header = Set-Cookie: ZSession=EVlPe4reZzm8Oh2JmqtL3VXEXUMwOPokHV4fGoqBUI6CpJLFLEbue1ANssiZTP5Ofai0mYk0Hv2b-cgDpVGORZSQx3w_v-P-1wht4n15EC_vmpWkYsVfpjv_UAxljQe78lDHMVJFvTSYwyBcj5EPmxlTb0A8trOFgjvatckayaFz_B-X3-52yqiGsFDKXYZ0sVnzxxA1go9iEV80upwt4JgwtKSW7XEpwLbgi0anW69c-lv6wj7OPZca-HTKey6Z; Path=/; Secure; HttpOnly
+2015-10-25 07:32:09.809 1 HTTP status = 200
+2015-10-25 07:32:09.809 1 HTTP reason = OK
+2015-10-25 07:32:09.809 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:09.809 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-25 07:32:09.810 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:09.810 1 HTTP method = PUT
+2015-10-25 07:32:09.810 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-entries/JE-00000014/basic-information
+2015-10-25 07:32:09.810 1 Request Body = {
+  "je_picklist1__c": "123",
+  "je_text1__c": "Phase 1",
+  "journalEntryItems": [{
+  "accountingCodeName": "Accounts Receivable",
+  "accountingCodeType": "Deferred Revenue",
+  "jei_picklist1__c": "123",
+  "jei_text1__c": "item 1",
+  "type": "Credit"
+}],
+  "notes": "Soho Networks",
+  "transferredToAccounting": "Yes"
+}
+2015-10-25 07:32:09.810 1 Header = Accept: application/json
+2015-10-25 07:32:09.810 1 Header = Content-Type: application/json
+2015-10-25 07:32:10.028 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:10.028 1 HTTP method = PUT
+2015-10-25 07:32:10.028 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-entries/JE-00000014/basic-information
+2015-10-25 07:32:10.028 1 Header = Server: Zuora App
+2015-10-25 07:32:10.028 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:10.029 1 Header = Content-Length: 181
+2015-10-25 07:32:10.029 1 Header = Expires: Sun, 25 Oct 2015 07:32:09 GMT
+2015-10-25 07:32:10.029 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:10.029 1 Header = Pragma: no-cache
+2015-10-25 07:32:10.029 1 Header = Date: Sun, 25 Oct 2015 07:32:09 GMT
+2015-10-25 07:32:10.029 1 Header = Connection: keep-alive
+2015-10-25 07:32:10.029 1 Header = Set-Cookie: ZSession=Was0PWmdftROKKIBHWaapIA7pp9CHJhAcXtd4CIKfxCQvxi2iIuM007O_Tt6TlhxsozG_CTzDX1CH5wU4EM-cmq0ktWbB0IPBOayW11ZD8ZdeC8nbe41wdzMLwbw5kVoQR2zItOBInTufxQBPYSg0tznFynRB81o8WKnM_zF3CscB-L8XTW6HnwVCVlPnFmjKF5OyZSnGbQloK2tXUjmwCV88kjbOPCqb0pT8QhdjvzlP_oDDI3s-yA4dxocTkjq; Path=/; Secure; HttpOnly
+2015-10-25 07:32:10.029 1 HTTP status = 200
+2015-10-25 07:32:10.029 1 HTTP reason = OK
+2015-10-25 07:32:10.029 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:10.029 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "processId": "4F1D0BB7D9A7689B",
+  "reasons": [{
+    "code": 55710820,
+    "message": "Invalid custom fields: 'jei_picklist1__c,jei_text1__c'."
+  }],
+  "success": false
+}
+2015-10-25 07:32:10.030 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:10.030 1 HTTP method = POST
+2015-10-25 07:32:10.030 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:10.030 1 Request Body = {}
+2015-10-25 07:32:10.030 1 Header = Accept: application/json
+2015-10-25 07:32:10.031 1 Header = Content-Type: application/json
+2015-10-25 07:32:10.031 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-25 07:32:10.031 1 Header = apiSecretAccessKey: Herbert01
+2015-10-25 07:32:10.227 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:10.227 1 HTTP method = POST
+2015-10-25 07:32:10.228 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:10.228 1 Header = Server: Zuora App
+2015-10-25 07:32:10.228 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:10.228 1 Header = Expires: Sun, 25 Oct 2015 07:32:10 GMT
+2015-10-25 07:32:10.228 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:10.228 1 Header = Pragma: no-cache
+2015-10-25 07:32:10.228 1 Header = Date: Sun, 25 Oct 2015 07:32:10 GMT
+2015-10-25 07:32:10.228 1 Header = Content-Length: 22
+2015-10-25 07:32:10.228 1 Header = Connection: keep-alive
+2015-10-25 07:32:10.228 1 Header = Set-Cookie: ZSession=J-vE2hYpcuaEtsGT3wNYtf-c58fjG2ghal2iIndnv21R_lQ6h5EpXcZApcC493kTBBNzDJ17N1vI4wfoWX-TsXjb1FQFYIBXnnx4aixZiXeReibHyzUFENdjj5KN1zQZITSV8ofC8ZFW_Tp4775TDIYERN2bWT7PKeLnMzC15u54V5L5qfnp9qrCNYzgxG1M5YyGPe_7-5DFmf3qBzVhkHuuwuzahP1Qd6gxDty6BkOktWkNWJtJf0cnOl5pBh29; Path=/; Secure; HttpOnly
+2015-10-25 07:32:10.228 1 HTTP status = 200
+2015-10-25 07:32:10.228 1 HTTP reason = OK
+2015-10-25 07:32:10.228 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:10.228 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-25 07:32:10.229 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:10.229 1 HTTP method = POST
+2015-10-25 07:32:10.230 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-entries
+2015-10-25 07:32:10.230 1 Request Body = {
+  "accountingPeriodName": "Nov-2014",
+  "currency": "USD",
+  "journalEntryDate": "2014-11-30",
+  "journalEntryItems": [
+    {
+  "accountingCodeName": "Accounts Receivable",
+  "accountingCodeType": "Deferred Revenue",
+  "amount": " 400.9",
+  "homeCurrencyAmount": "801.8",
+  "type": "Credit"
+},
+    {
+  "accountingCodeName": "Subscription Revenue",
+  "amount": " 400.9",
+  "homeCurrencyAmount": "801.8",
+  "type": "Debit"
+}
+  ],
+  "notes": "my account",
+  "segments": [
+    {
+  "segmentName": "billToCountry",
+  "segmentValue": "United States"
+},
+    {
+  "segmentName": "billToState",
+  "segmentValue": "California"
+}
+  ],
+  "transferredToAccounting": "Ignore"
+}
+2015-10-25 07:32:10.230 1 Header = Accept: application/json
+2015-10-25 07:32:10.230 1 Header = Content-Type: application/json
+2015-10-25 07:32:10.672 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:10.672 1 HTTP method = POST
+2015-10-25 07:32:10.672 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-entries
+2015-10-25 07:32:10.672 1 Header = Server: Zuora App
+2015-10-25 07:32:10.672 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:10.672 1 Header = Content-Length: 161
+2015-10-25 07:32:10.672 1 Header = Expires: Sun, 25 Oct 2015 07:32:10 GMT
+2015-10-25 07:32:10.672 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:10.673 1 Header = Pragma: no-cache
+2015-10-25 07:32:10.673 1 Header = Date: Sun, 25 Oct 2015 07:32:10 GMT
+2015-10-25 07:32:10.673 1 Header = Connection: keep-alive
+2015-10-25 07:32:10.673 1 Header = Set-Cookie: ZSession=6fpy5V_4sqMmLMMhTgsl9iKTRalhDhTvTetVuLYQ4Hezo4IfXUUBuqq_pAVBkZIaQljkCtkCiqTGnrED64TZfhXmeFpCLOoDuveTp5vOwGh_NllK86H1jXU7pFfzfAqbd06hBWPDgHpxgfFhdgl1Kfm-IlCm5Vu1kTO6qb-zVG8kapK8UGvQnKsT-bm-ddM6rfpb8hGPZ2bdoOXSx3PiNz7iVkvJ65wbjHd6PUVEMzCu_4ZJuH7S06YLNqjrmxLB; Path=/; Secure; HttpOnly
+2015-10-25 07:32:10.673 1 HTTP status = 200
+2015-10-25 07:32:10.673 1 HTTP reason = OK
+2015-10-25 07:32:10.673 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:10.673 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "processId": "9A7A0A95ECA7CF35",
+  "reasons": [{
+    "code": 55660220,
+    "message": "Invalid Accounting Period Nov-2014."
+  }],
+  "success": false
+}
+2015-10-25 07:32:10.674 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:10.674 1 HTTP method = POST
+2015-10-25 07:32:10.674 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:10.674 1 Request Body = {}
+2015-10-25 07:32:10.674 1 Header = Accept: application/json
+2015-10-25 07:32:10.674 1 Header = Content-Type: application/json
+2015-10-25 07:32:10.674 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-25 07:32:10.674 1 Header = apiSecretAccessKey: Herbert01
+2015-10-25 07:32:10.977 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:10.978 1 HTTP method = POST
+2015-10-25 07:32:10.978 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:10.978 1 Header = Server: Zuora App
+2015-10-25 07:32:10.978 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:10.978 1 Header = Content-Length: 22
+2015-10-25 07:32:10.978 1 Header = Expires: Sun, 25 Oct 2015 07:32:10 GMT
+2015-10-25 07:32:10.978 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:10.978 1 Header = Pragma: no-cache
+2015-10-25 07:32:10.978 1 Header = Date: Sun, 25 Oct 2015 07:32:10 GMT
+2015-10-25 07:32:10.978 1 Header = Connection: keep-alive
+2015-10-25 07:32:10.978 1 Header = Set-Cookie: ZSession=WsMAenOcQbs9CwrRe2MJdpyrnjIlpfQ2wm9biD0xc2Q-RbY-VtpeO4t_Ul0AZXPncLCOgXU0YeTD1MojXTK8HZKXyUqzYR9MO19k9-vn95mXmDQUKZwWI5F5J8CdjnLT4_8HkCFFTK5SaA6vJzsXSAm7ON8AYIbDn8SIADWLeNL-ms1PEkF7FJd2O3o-9cfXEM6vetb2c_pvVPUjjk1ZOBHizhz2H6z5nyS_YbESNsVw-inGx8lpERPeaZjtGCxA; Path=/; Secure; HttpOnly
+2015-10-25 07:32:10.978 1 HTTP status = 200
+2015-10-25 07:32:10.979 1 HTTP reason = OK
+2015-10-25 07:32:10.979 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:10.979 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-25 07:32:10.979 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:10.979 1 HTTP method = GET
+2015-10-25 07:32:10.979 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-entries/journal-runs/JR-00000002
+2015-10-25 07:32:10.979 1 Query String = {}
+2015-10-25 07:32:10.979 1 Header = Accept: application/json
+2015-10-25 07:32:10.979 1 Header = follow_redirect: true
+2015-10-25 07:32:11.201 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:11.201 1 HTTP method = GET
+2015-10-25 07:32:11.201 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-entries/journal-runs/JR-00000002
+2015-10-25 07:32:11.201 1 Header = Server: Zuora App
+2015-10-25 07:32:11.201 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:11.201 1 Header = Content-Length: 167
+2015-10-25 07:32:11.201 1 Header = Expires: Sun, 25 Oct 2015 07:32:11 GMT
+2015-10-25 07:32:11.201 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:11.201 1 Header = Pragma: no-cache
+2015-10-25 07:32:11.202 1 Header = Date: Sun, 25 Oct 2015 07:32:11 GMT
+2015-10-25 07:32:11.202 1 Header = Connection: keep-alive
+2015-10-25 07:32:11.202 1 Header = Set-Cookie: ZSession=POa3MSMuRQI1vLPexIPbEK03Zub1Ae5Iw8b26afIV34-5uVP8egQtVzmYwS8wYH0SC4_1l-GqjgY3LAoWM8eC2UIhUDX2BQoR41nf2sQRss-PHRnGww0eSc_6QmmL6qYVH0KeCvOsd7R0m3iNY8g0m1Np-ydyzEvz-4xLYqmxTUhl4EaxoKUaOR8RHHSbLQ0J-Ga-qpGsFWOHI6yYQSGdMerzEurlazY6OvilMJuxf3dJFFE6VzsGwyCpcXPSHo8; Path=/; Secure; HttpOnly
+2015-10-25 07:32:11.202 1 HTTP status = 200
+2015-10-25 07:32:11.202 1 HTTP reason = OK
+2015-10-25 07:32:11.202 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:11.202 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "processId": "6D603684787487C0",
+  "reasons": [{
+    "code": 50000040,
+    "message": "Cannot find entity by key: 'JR-00000002'."
+  }],
+  "success": false
+}
+2015-10-25 07:32:11.203 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:11.203 1 HTTP method = POST
+2015-10-25 07:32:11.203 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:11.203 1 Request Body = {}
+2015-10-25 07:32:11.203 1 Header = Accept: application/json
+2015-10-25 07:32:11.203 1 Header = Content-Type: application/json
+2015-10-25 07:32:11.203 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-25 07:32:11.203 1 Header = apiSecretAccessKey: Herbert01
+2015-10-25 07:32:11.545 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:11.545 1 HTTP method = POST
+2015-10-25 07:32:11.545 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:11.545 1 Header = Server: Zuora App
+2015-10-25 07:32:11.545 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:11.545 1 Header = Content-Length: 22
+2015-10-25 07:32:11.545 1 Header = Expires: Sun, 25 Oct 2015 07:32:11 GMT
+2015-10-25 07:32:11.545 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:11.545 1 Header = Pragma: no-cache
+2015-10-25 07:32:11.545 1 Header = Date: Sun, 25 Oct 2015 07:32:11 GMT
+2015-10-25 07:32:11.545 1 Header = Connection: keep-alive
+2015-10-25 07:32:11.546 1 Header = Set-Cookie: ZSession=3DPqAz9RXsa9CYQlpJRwsj2mFPVLhRtBWvezG3XQqIhMDmOBnwWWTLhwGCABuPKRHK8ZcLFCIser2LAMYxh8BPW5IdkgtmY-koQ-1hGHaA-pyz1BwVbthbFBRUg1aBbsNjrkyd4NtG2zbXhetOgdZVkA71GxzCpzy-l5qPiPERsl900s-n1N50fSofR7JXg5Eix_z8la17grHX7MzIP20FN4K1Mp0-4cGBcM-rQk28SLlLTla8s3GdT-k0H6fyEG; Path=/; Secure; HttpOnly
+2015-10-25 07:32:11.546 1 HTTP status = 200
+2015-10-25 07:32:11.546 1 HTTP reason = OK
+2015-10-25 07:32:11.546 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:11.546 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-25 07:32:11.546 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:11.546 1 HTTP method = GET
+2015-10-25 07:32:11.547 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-entries/JE-00000014
+2015-10-25 07:32:11.547 1 Query String = {}
+2015-10-25 07:32:11.547 1 Header = Accept: application/json
+2015-10-25 07:32:11.547 1 Header = follow_redirect: true
+2015-10-25 07:32:12.034 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:12.034 1 HTTP method = GET
+2015-10-25 07:32:12.035 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-entries/JE-00000014
+2015-10-25 07:32:12.035 1 Header = Server: Zuora App
+2015-10-25 07:32:12.035 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:12.035 1 Header = Content-Length: 167
+2015-10-25 07:32:12.035 1 Header = Expires: Sun, 25 Oct 2015 07:32:11 GMT
+2015-10-25 07:32:12.035 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:12.035 1 Header = Pragma: no-cache
+2015-10-25 07:32:12.035 1 Header = Date: Sun, 25 Oct 2015 07:32:11 GMT
+2015-10-25 07:32:12.035 1 Header = Connection: keep-alive
+2015-10-25 07:32:12.035 1 Header = Set-Cookie: ZSession=a-Ik2RLxfwEk2nIzoZ0mfKYZitn_lzVPjpDYUbyyEKb2hB64tsVw7lnub1mojOczdf5GKqGZe2XTHtMwRRZ1WFI8fTL9r0-DFxQ37fjLLFpHkJ0hder33aKxsWJ0sz5nU4dLR-ociZJccww8xJFrSErJJ1P9a_nUZtFp1UdQd2Lyl4WpnKZGMCjFVYX3gInpSL8uxqrEGqajxfi1CrvddKXu6hnih_Y74UODFMoy6wxgbqd4w0YUW3mAtgXQX0BP; Path=/; Secure; HttpOnly
+2015-10-25 07:32:12.035 1 HTTP status = 200
+2015-10-25 07:32:12.035 1 HTTP reason = OK
+2015-10-25 07:32:12.035 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:12.035 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "processId": "C461DC8A966CBA1C",
+  "reasons": [{
+    "code": 50000040,
+    "message": "Cannot find entity by key: 'JE-00000014'."
+  }],
+  "success": false
+}
+2015-10-25 07:32:12.038 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:12.038 1 HTTP method = POST
+2015-10-25 07:32:12.038 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:12.038 1 Request Body = {}
+2015-10-25 07:32:12.038 1 Header = Accept: application/json
+2015-10-25 07:32:12.038 1 Header = Content-Type: application/json
+2015-10-25 07:32:12.038 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-25 07:32:12.038 1 Header = apiSecretAccessKey: Herbert01
+2015-10-25 07:32:12.337 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:12.337 1 HTTP method = POST
+2015-10-25 07:32:12.338 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:12.338 1 Header = Server: Zuora App
+2015-10-25 07:32:12.338 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:12.338 1 Header = Content-Length: 22
+2015-10-25 07:32:12.338 1 Header = Expires: Sun, 25 Oct 2015 07:32:12 GMT
+2015-10-25 07:32:12.338 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:12.338 1 Header = Pragma: no-cache
+2015-10-25 07:32:12.338 1 Header = Date: Sun, 25 Oct 2015 07:32:12 GMT
+2015-10-25 07:32:12.338 1 Header = Connection: keep-alive
+2015-10-25 07:32:12.338 1 Header = Set-Cookie: ZSession=afhEFiK9E_8kA1_DWZQ8DhgU-gCWzrNUXEwyUEx2w1OhDtSDm1623JxWjCqLEQox4a2LH7z6BjtTnKH6iQvoh_6K0SFh406W9jn4gE3ica5Uh0TnyJK9XwOb7PIkXxF6q2V4iYVzYyMvMgux3a_hxoXaF_Ldy1LK0Qf1c35XL5raOUC7RoW-5_-yJlbBiLa66nvAsU49EE0xhf23InBEG-NRPN5USzCVo_gQmIaDm4hpRGz6-zT4z1JEuv-Iljpy; Path=/; Secure; HttpOnly
+2015-10-25 07:32:12.338 1 HTTP status = 200
+2015-10-25 07:32:12.338 1 HTTP reason = OK
+2015-10-25 07:32:12.338 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:12.338 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-25 07:32:12.339 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:12.339 1 HTTP method = GET
+2015-10-25 07:32:12.339 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-runs/JR-00000004
+2015-10-25 07:32:12.339 1 Query String = {}
+2015-10-25 07:32:12.339 1 Header = Accept: application/json
+2015-10-25 07:32:12.339 1 Header = follow_redirect: true
+2015-10-25 07:32:12.551 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:12.551 1 HTTP method = GET
+2015-10-25 07:32:12.551 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-runs/JR-00000004
+2015-10-25 07:32:12.551 1 Header = Server: Zuora App
+2015-10-25 07:32:12.551 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:12.551 1 Header = Content-Length: 167
+2015-10-25 07:32:12.551 1 Header = Expires: Sun, 25 Oct 2015 07:32:12 GMT
+2015-10-25 07:32:12.551 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:12.552 1 Header = Pragma: no-cache
+2015-10-25 07:32:12.552 1 Header = Date: Sun, 25 Oct 2015 07:32:12 GMT
+2015-10-25 07:32:12.552 1 Header = Connection: keep-alive
+2015-10-25 07:32:12.552 1 Header = Set-Cookie: ZSession=WQpfErumOHOvrv6p95Rd4Ox5H8hBiibwSceGxSalNV_rVJYLHs1kVjNCGI6zsAnTuu2Eah9uueKmJbVeVmFjLsa-KQQP1hpIhXg8jpwnI-KoSnMCvc4V2edgARdaZwNQu0BdsFio27K1zOL3Pen5IJOM5kgRbIjhxOqO4-86clf23w1-ZuNOhusajWnLSDYH-FnemzUrMUShFkjDYFP3vgdQqk5UJSxJAXIjywLT8fWxlUItleCO3UAgC3HfLaMO; Path=/; Secure; HttpOnly
+2015-10-25 07:32:12.552 1 HTTP status = 200
+2015-10-25 07:32:12.552 1 HTTP reason = OK
+2015-10-25 07:32:12.552 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:12.552 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "processId": "5A76A194AAE4837E",
+  "reasons": [{
+    "code": 50000040,
+    "message": "Cannot find entity by key: 'JR-00000004'."
+  }],
+  "success": false
+}
+2015-10-25 07:32:12.553 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:12.553 1 HTTP method = POST
+2015-10-25 07:32:12.553 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:12.553 1 Request Body = {}
+2015-10-25 07:32:12.553 1 Header = Accept: application/json
+2015-10-25 07:32:12.554 1 Header = Content-Type: application/json
+2015-10-25 07:32:12.554 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-25 07:32:12.554 1 Header = apiSecretAccessKey: Herbert01
+2015-10-25 07:32:12.903 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:12.903 1 HTTP method = POST
+2015-10-25 07:32:12.903 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:12.903 1 Header = Server: Zuora App
+2015-10-25 07:32:12.903 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:12.903 1 Header = Content-Length: 22
+2015-10-25 07:32:12.903 1 Header = Expires: Sun, 25 Oct 2015 07:32:12 GMT
+2015-10-25 07:32:12.903 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:12.903 1 Header = Pragma: no-cache
+2015-10-25 07:32:12.903 1 Header = Date: Sun, 25 Oct 2015 07:32:12 GMT
+2015-10-25 07:32:12.903 1 Header = Connection: keep-alive
+2015-10-25 07:32:12.903 1 Header = Set-Cookie: ZSession=6JJrzhr5ZtB_5vFSUzTJqTXrwMPXh92RfKGMym8ZoqKI1QEIomlG8oKD_ZRXnRcqZ9zRw5ga2ajgsJy_xZ4JIesL0S6LfxPDim5HscRiLTVSwHhZd42nkpluLQURu67yxWfZlFZ4dxZnJvKZQO2UUYlb7NYLhvL_F1qvjhp5SYOZK4BEhP87zShpY9DsqpjTK6J4AX1QAyHYpHJzFF--wk43-1S0zV2c-bNccYIfh5sFBuNaXO-C--emS6x_B8x0; Path=/; Secure; HttpOnly
+2015-10-25 07:32:12.903 1 HTTP status = 200
+2015-10-25 07:32:12.904 1 HTTP reason = OK
+2015-10-25 07:32:12.904 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:12.904 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-25 07:32:12.904 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:12.904 1 HTTP method = POST
+2015-10-25 07:32:12.904 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-runs
+2015-10-25 07:32:12.904 1 Request Body = {
+  "accountingPeriodName": "Nov-2014",
+  "journalEntryDate": "2014-11-30",
+  "targetEndDate": "2014-11-30",
+  "targetStartDate": "2014-11-01",
+  "transactionTypes": [
+    {"type": "Invoice Item"},
+    {"type": "Invoice Item Adjustment (Invoice)"},
+    {"type": "Revenue Event Item"}
+  ]
+}
+2015-10-25 07:32:12.904 1 Header = Accept: application/json
+2015-10-25 07:32:12.904 1 Header = Content-Type: application/json
+2015-10-25 07:32:13.367 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:13.367 1 HTTP method = POST
+2015-10-25 07:32:13.367 1 URL = https://apisandbox-api.zuora.com/rest/v1/journal-runs
+2015-10-25 07:32:13.367 1 Header = Server: Zuora App
+2015-10-25 07:32:13.367 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:13.367 1 Header = Content-Length: 176
+2015-10-25 07:32:13.367 1 Header = Expires: Sun, 25 Oct 2015 07:32:13 GMT
+2015-10-25 07:32:13.367 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:13.367 1 Header = Pragma: no-cache
+2015-10-25 07:32:13.367 1 Header = Date: Sun, 25 Oct 2015 07:32:13 GMT
+2015-10-25 07:32:13.367 1 Header = Connection: keep-alive
+2015-10-25 07:32:13.367 1 Header = Set-Cookie: ZSession=FJB285fDnCzIjb8Ojw4NxpjTmFBw7lvZUPRx4rK0Rw9xZubH9hRCLmJil67LbEJV0NL69u12hv8Wuc4ABO4wZEv25DEIgaz3odiar9aZG3NmrCBz1wCTR2V5iGSXo0YECItk2AOR0xsasLoZO5_azhTFlCyJgNgA-kFgzcmCY3IdyDnhU6QXBmaC64QwS7h6tNratYc-HXzU1gdev84okOKYCtWCEoqZ9RZmgg5WaPOLFf9VgwCU3VkWVsOMtg64; Path=/; Secure; HttpOnly
+2015-10-25 07:32:13.368 1 HTTP status = 200
+2015-10-25 07:32:13.368 1 HTTP reason = OK
+2015-10-25 07:32:13.368 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:13.368 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "processId": "487EE6BF4C566C7E",
+  "reasons": [{
+    "code": 55640220,
+    "message": "Accounting Period <b>Nov-2014<\/b> cannot be found."
+  }],
+  "success": false
+}
+2015-10-25 07:32:13.370 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:13.371 1 HTTP method = POST
+2015-10-25 07:32:13.371 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:13.371 1 Request Body = {}
+2015-10-25 07:32:13.371 1 Header = Accept: application/json
+2015-10-25 07:32:13.371 1 Header = Content-Type: application/json
+2015-10-25 07:32:13.371 1 Header = apiAccessKeyId: jon.holloway@brightpearl.com
+2015-10-25 07:32:13.371 1 Header = apiSecretAccessKey: Herbert01
+2015-10-25 07:32:13.565 1 ***** POST-API RESPONSE TRACE *****
+2015-10-25 07:32:13.565 1 HTTP method = POST
+2015-10-25 07:32:13.565 1 URL = https://apisandbox-api.zuora.com/rest/connections
+2015-10-25 07:32:13.565 1 Header = Server: Zuora App
+2015-10-25 07:32:13.565 1 Header = Content-Type: application/json;charset=utf-8
+2015-10-25 07:32:13.565 1 Header = Expires: Sun, 25 Oct 2015 07:32:13 GMT
+2015-10-25 07:32:13.566 1 Header = Cache-Control: max-age=0, no-cache, no-store
+2015-10-25 07:32:13.566 1 Header = Pragma: no-cache
+2015-10-25 07:32:13.566 1 Header = Date: Sun, 25 Oct 2015 07:32:13 GMT
+2015-10-25 07:32:13.566 1 Header = Content-Length: 22
+2015-10-25 07:32:13.566 1 Header = Connection: keep-alive
+2015-10-25 07:32:13.566 1 Header = Set-Cookie: ZSession=IlTEYkjDIwMSNOlVXnv78yPIpxj0YCoNG-1_KWOQ7eAGs9xSaTxaSZdnmvGJmy_Fax_y6i5aofNCb0_PbvfBCpDazZxR7Vfflq0GwaY8Ex-BxZ0Xh_KrVuCsCpMQoOtK7uiH9xZd0nKlNDru1-gn9wVV3AYpfqOOXcZcZpWsuqNVuC5EKEPCjRA6MqFcnN805BDM97vBHAy3dzeHdYC5lyJkjIrkJHPlu4IPatFomMTl1Dz5egybROqPOsQJDB_h; Path=/; Secure; HttpOnly
+2015-10-25 07:32:13.566 1 HTTP status = 200
+2015-10-25 07:32:13.566 1 HTTP reason = OK
+2015-10-25 07:32:13.566 1 HTTP version = HTTP/1.1
+2015-10-25 07:32:13.566 1 API Response = {
+  "httpReasonbPhrase": "OK",
+  "httpStatusCode": 200,
+  "success": true
+}
+2015-10-25 07:32:13.567 1 ***** PRE-API TRACE *****
+2015-10-25 07:32:13.567 1 HTTP method = POST
+2015-10-25 07:32:13.567 1 URL = https://apisandbox-api.zuora.com/rest/v1/bulk
+2015-10-25 07:32:13.567 1 Request Body = /Users/jon/workspace-java/zuora-rest-api/target/classes/com/zuora/sdk/samples/CreateRevenueSchedulesTemplate.csv
+2015-10-25 07:32:13.567 1 Header = Accept: application/json

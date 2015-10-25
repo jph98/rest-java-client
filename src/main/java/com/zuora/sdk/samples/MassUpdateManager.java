@@ -21,7 +21,7 @@ public class MassUpdateManager {
     private ZClient zClient;
     private String bulkKey;
 
-    MassUpdateManager(ZClient zClient) {
+    public MassUpdateManager(ZClient zClient) {
         this.zClient = zClient;
     }
 

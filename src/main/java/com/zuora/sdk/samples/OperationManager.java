@@ -15,7 +15,7 @@ public class OperationManager {
     static final String SAMPLE_ACCOUNT_KEY = "A00001069";
     private ZClient zClient;
 
-    OperationManager(ZClient zClient) {
+    public OperationManager(ZClient zClient) {
         this.zClient = zClient;
     }
 

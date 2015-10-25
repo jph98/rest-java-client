@@ -17,7 +17,7 @@ public class PaymentMethodManager {
     private ZClient zClient;
     private String accountKey;
 
-    PaymentMethodManager(ZClient zClient) {
+    public PaymentMethodManager(ZClient zClient) {
         this.zClient = zClient;
     }
 

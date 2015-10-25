@@ -17,7 +17,7 @@ public class TransactionManager {
     private ZClient zClient;
     private String accountKey;
 
-    TransactionManager(ZClient zClient) {
+    public TransactionManager(ZClient zClient) {
         this.zClient = zClient;
     }
 
